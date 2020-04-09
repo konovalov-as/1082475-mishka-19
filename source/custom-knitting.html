@@ -11,7 +11,7 @@
 <body class="body">
   <div class="page-container">
     <header class="page-header">
-      <a class="page-header__logo-link">
+      <a class="page-header__logo-link" href="index.html">
         <picture class="page-header__logo-image">
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -26,7 +26,7 @@
               <a class="site-list__link" href="catalog-goods.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="custom-knitting.html">Вязание на заказ</a>
+              <a class="site-list__link">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="search-site.html">
@@ -57,126 +57,164 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Интернет-магазин «Мишка» - Милые штуки ручной работы для дома</h1>
-
-      <section class="nice-things">
-        <div class="nice-things__wrapper">
-          <h2 class="nice-things__header">Милые штуки ручной работы для дома</h2>
-          <div class="nice-things__box-image">
-            <picture class="nice-things__image">
-              <source media="(min-width: 1150px)" srcset="img/hero-tablet@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/hero-desktop@1x.jpg">
-              <img src="img/hero-mobile@1x.jpg" alt="Фото трех товаров в домике с треугольной крышей">
-            </picture>
-          </div>
-        </div>
-        <div class="interior-items__wrapper">
-          <div class="interior-items">
-            <a class="interior-items__link" href="interior-items.html">Предметы интерьера</a>
-          </div>
-          <div class="interior-items">
-            <a class="interior-items__link" href="kids-toys.html">Детские игрушки</a>
-          </div>
-        </div>
-      </section>
+      <h1 class="title-h1 page-main__title">Вязание на заказ</h1>
 
       <div class="container">
-        <section class="product-week">
-          <div class="product-week__wrapper">
-            <h2 class="title-h2 product-week__title">Вязаные корзинки</h2>
-            <span class="product-week__subtitle">Товар недели</span>
-            <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
-              трех размерах.</p>
-            <table class="product-week__characteristics">
-              <tr>
-                <td class="product-week__value">Цвет:</td>
-                <td class="product-week__field">«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <td class="product-week__value">Диаметр:</td>
-                <td class="product-week__field">25 см</td>
-              </tr>
-              <tr>
-                <td class="product-week__value">Высота:</td>
-                <td class="product-week__field">15 см</td>
-              </tr>
-            </table>
-            <div class="product-week__box-image">
-              <picture class="product-week__image">
-                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/triple-set-mobile@1x.jpg">
-                <img src="img/triple-set-mobile@1x.jpg" alt="Фото вязаных корзинок трех размеров">
-              </picture>
-            </div>
-            <span class="product-week__price">Цена: 990 руб.</span>
-            <a class="product-week__order button" href="order.html">Заказать</a>
-          </div>
+        <section class="custom-knitting">
+          <div class="custom-knitting__wrapper">
+            <h2 class="visually-hidden">Форма заказа</h2>
+            <p class="custom-knitting__description">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+              уточнить детали.
+            </p>
+            <form class="custom-knitting__form form-order" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="form-order__fieldset">
+                <legend class="form-order__legend">Тип</legend>
+                <ul class="form-order__type-list">
+                  <li class="form-order__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" name="type" type="radio" value="interior-items" checked>
+                      <span class="field-radio"></span>
+                      Аксессуар для интерьера
+                    </label>
+                  </li>
+                  <li class="form-order__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" name="type" type="radio" value="kids-toys">
+                      <span class="field-radio"></span>
+                      Детская игрушка
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-order__fieldset">
+                <legend class="form-order__legend">Цвет</legend>
+                <ul class="form-order__colors list-colors">
+                  <li class="list-colors__item">
+                    <label for="label-form-order">
+                      <input class="visually-hidden" type="checkbox" name="color-black" checked>
+                      <span class="field-checkbox"></span>
+                      Белый
+                    </label>
+                  </li>
+                  <li class="list-colors__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" type="checkbox" name="color-white" checked>
+                      <span class="field-checkbox"></span>
+                      Серый
+                    </label>
+                  </li>
+                  <li class="list-colors__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" type="checkbox" name="color-blue">
+                      <span class="field-checkbox"></span>
+                      «Тиффани»
+                    </label>
+                  </li>
+                  <li class="list-colors__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" type="checkbox" name="color-red">
+                      <span class="field-checkbox"></span>
+                      Черный
+                    </label>
+                  </li>
+                  <li class="list-colors__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" type="checkbox" name="color-pink">
+                      <span class="field-checkbox"></span>
+                      Розовый
+                    </label>
+                  </li>
+                  <li class="list-colors__item">
+                    <label class="label-form-order">
+                      <input class="visually-hidden" type="checkbox" name="color-pink">
+                      <span class="field-checkbox"></span>
+                      Оранжевый
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-order__fieldset">
+                <legend class="form-order__legend">ФИО</legend>
+                <ul class="form-order__name-list full-name-list">
+                  <li class="full-name-list__item">
+                    <label class="label-form-order">Имя:
+                      <input class="field-text" name="name" type="text" placeholder="Введите ваше имя*">
+                    </label>
+                  </li>
+                  <li class="full-name-list__item">
+                    <label class="label-form-order">Фамилия:
+                      <input class="field-text" name="surname" type="text" placeholder="Укажите фамилию*">
+                    </label>
+                  </li>
+                  <li class="full-name-list__item">
+                    <label class="label-form-order">Отчество:
+                      <input class="field-text" name="middle-name" type="text" placeholder="Отчество, если желаете">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-order__fieldset">
+                <legend class="form-order__legend">тел</legend>
+                <ul class="form-order__phone">
+                  <li class="form-order__phone-item">
+                    <label class="visually-hidden">Телефон:*
+                      <input class="field-value" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                      <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px"
+                        viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
+                        <g>
+                          <g id="UrwUhy_2_">
+                            <g>
+                              <path fill="#cccccc"
+                                d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z" />
+                            </g>
+                          </g>
+                          <path fill="#cccccc"
+                            d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z" />
+                          <path fill="#cccccc"
+                            d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z" />
+                          <path fill="#cccccc"
+                            d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z" />
+                        </g>
+                      </svg>
+
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-order__fieldset">
+                <legend class="form-order__legend">E-mail</legend>
+                <ul class="form-order__email">
+                  <li class="form-order__email-item">
+                    <label class="visually-hidden">E-mail:*
+                      <input class="field-value" name="email" type="email" placeholder="Ваш Email*">
+                      <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="21px"
+                        viewBox="0 0 32 21" enable-background="new 0 0 32 32" xml:space="preserve">
+                        <path id="mail" fill="#cccccc"
+                          d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z" />
+                      </svg>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-order__fieldset">
+                <legend class="form-order__legend">Доп</legend>
+                <textarea class="field-textarea" name="more-description" cols="40" rows="20"
+                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </fieldset>
+              <div class="custom-knitting__inner">
+                <button class="custom-knitting__send-order button" type="submit">Отправить заказ</button>
+                <small class="custom-knitting__required-fields">* — Обязательные поля</small>
+              </div>
+            </form>
         </section>
       </div>
-
-      <div class="container">
-        <section class="advantages">
-          <div class="advantages__wrapper">
-            <h2 class="title-h2 about-us__title">Коротко о нас:</h2>
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--materials">Экологически чистые материалы</li>
-              <li class="advantages__item advantages__item--style">Скандинавский стиль по российской цене</li>
-              <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
-              <li class="advantages__item advantages__item--manually">Связано вручную с любовью и умилением</li>
-              <li class="advantages__item advantages__item--domestic">Поддержка отечественного производителя</li>
-              <li class="advantages__item advantages__item--present">Поставляется в подарочной упаковке</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-
-      <div class="container">
-        <section class="reviews">
-          <div class="reviews__wrapper">
-            <h2 class="title-h2 reviews__title">Отзывы</h2>
-            <div class="reviews__list">
-              <blockquote class="reviews__item">
-                <p class="reviews__text">
-                  Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у
-                  популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
-                  стали более стильными, а также набирают больше лайков!
-                </p>
-                <cite class="reviews__author-name">Анастасия Красильникова <span>@misssssiskras</span></cite>
-              </blockquote>
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
-            </div>
-            <a class="reviews__write button" href="write-review.html">Написать</a>
-          </div>
-        </section>
-      </div>
-
-      <section class="contacts">
-        <div class="container">
-          <h2 class="title-h2 contacts__title">Контакты</h2>
-          <table clas="contacts__block">
-            <tr>
-              <td class="contacts__value">e-mail:</td>
-              <td class="contacts__field">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__value">адрес:</td>
-              <td class="contacts__field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </table>
-        </div>
-        <div class="contacts__box-map">
-          <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457"
-            alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
-        </div>
-        <div class="contacts__box-map" id="map" style="width: 322px; height: 457px"></div>
-        <a class="contacts__write-to-us button" href="write-to-us.html">Напишите нам</a>
-      </section>
-
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo-link">
+          <a class="page-footer__logo-link" href="index.html">
             <img class="page-footer__logo-image visually-hidden" src="img/logo-footer.svg" width="102" height="34"
               alt="Интернет-магазин «Мишка»">
           </a>
@@ -252,10 +290,6 @@
     </main>
 
   </div>
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=04ee10fc-51b0-4eb0-bece-6806ca0cad49&lang=ru_RU"
-    type="text/javascript"></script>
-  <script src="js/map.js"></script>
 
 </body>
 
