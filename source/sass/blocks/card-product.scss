@@ -1,0 +1,41 @@
+.card-product__link-image {
+  color: $base-color;
+  text-decoration: none;
+}
+
+.card-product__picture {
+  display: block;
+  width: 260px;
+  height: 195px;
+  background-color: #e6e6e6;
+}
+
+.card-product__title {
+  margin: 0;
+}
+
+.card-product__link-title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.41;
+  color: $base-color;
+  text-decoration: none;
+}
+
+.card-product__characteristics {
+  font-size: 13px;
+  line-height: 2.31;
+  color: $color-grey-1;
+  margin: 0;
+}
+
+.card-product__prcie {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.card-product__add-to-cart {
+  color: $base-color;
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.67;
+  margin: 0;
+}
+
+.contacts__block {
+  font-size: 15px;
+  line-height: 2;
+  color: $color-grey-1;
+  border-collapse: collapse;
+}
+
+.contacts__value,
+.contacts__field {
+  padding: 0;
+}
+
+.contacts__box-map {
+  width: 320px;
+  height: 457px;
+  background-color: #f4ead8;
+}

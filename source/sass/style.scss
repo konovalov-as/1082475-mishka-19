@@ -1,1 +1,51 @@
+@import "blocks/variables.scss";
+@import "blocks/normalize.scss";
+// @import "blocks/global.scss";
+// @import "blocks/fonts.scss";
 @import "blocks/body.scss";
+// @import "blocks/container.scss";
+// @import "blocks/page-container.scss";
+
+// header
+@import "blocks/main-menu-toggle.scss";
+@import "blocks/site-list.scss";
+
+// headers
+@import "blocks/title-h1.scss";
+@import "blocks/title-h2.scss";
+@import "blocks/title-h3.scss";
+
+// button style
+@import "blocks/button.scss";
+
+// page index
+@import "blocks/nice-things.scss";
+@import "blocks/interior-items.scss";
+@import "blocks/product-week.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+
+// page catalog
+@import "blocks/page-main.scss";
+@import "blocks/list-goods.scss";
+@import "blocks/card-product.scss";
+@import "blocks/production.scss";
+
+// page form
+@import "blocks/custom-knitting.scss";
+@import "blocks/form-order.scss";
+@import "blocks/list-types.scss";
+@import "blocks/list-colors.scss";
+@import "blocks/list-full-name.scss";
+@import "blocks/field-text.scss";
+@import "blocks/list-phone.scss";
+@import "blocks/list-email.scss";
+
+// footer
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+// popups
+@import "blocks/popus.scss";
+@import "blocks/size-list.scss";
