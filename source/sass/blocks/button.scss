@@ -1,0 +1,18 @@
+.button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.18;
+  color: $color-grey-1;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--fs18 {
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+.button--hl16 {
+  line-height: 0.94;
+}

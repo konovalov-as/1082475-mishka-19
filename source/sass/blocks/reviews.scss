@@ -1,0 +1,33 @@
+.reviews__title {
+  margin: 0;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 2;
+  color: $color-grey-1;
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.41;
+}
+
+.reviews__author-nickname {
+  font-size: 17px;
+  line-height: 1.76;
+  color: $color-grey-1;
+}
+
+.reviews__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}

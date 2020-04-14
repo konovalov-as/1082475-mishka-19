@@ -1,0 +1,23 @@
+.popus__tite {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.popus__label {
+  font-size: 15px;
+  line-height: 2;
+  color: $color-grey-1;
+  margin: 0;
+}
+
+.popus__submit-size {
+  font-size: 17px;
+  line-height: 0.94;
+  color: $color-white-1;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: $color-green-1;
+  cursor: pointer;
+  padding: 0;
+}
