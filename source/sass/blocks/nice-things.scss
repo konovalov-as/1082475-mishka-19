@@ -1,12 +1,17 @@
 .nice-things__wrapper {
   background-color: #fbfbfb;
+}
+
+.nice-things__inner {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: auto;
   min-height: 373px;
+  display: flex;
 }
 
 .nice-things__title {
   margin: 0;
+  margin-top: 93px;
 }

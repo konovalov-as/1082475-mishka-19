@@ -1,4 +1,11 @@
 .main-menu-toggle {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-image: url("../img/icon-menu-open.svg");
+  width: 20px;
+  height: 14px;
   border: none;
   background-color: transparent;
   cursor: pointer;

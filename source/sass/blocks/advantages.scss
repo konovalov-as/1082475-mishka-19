@@ -1,3 +1,8 @@
+.advantages__wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .advantages__title {
   margin: 0;
 }
@@ -10,4 +15,61 @@
   font-size: 17px;
   line-height: 1.18;
   text-decoration: none;
+}
+
+.advantages__item {
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__item--flower {
+  &::before {
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+}
+
+.advantages__item--money {
+  &::before {
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+}
+
+.advantages__item--heart {
+  &::before {
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+}
+
+.advantages__item--ball {
+  &::before {
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+}
+
+.advantages__item--rocket {
+  &::before {
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+}
+
+.advantages__item--gift {
+  &::before {
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }

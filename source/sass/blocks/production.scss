@@ -1,12 +1,37 @@
-.production__title {
-  margin: 0;
+.production__wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.production__picture {
+.production__title {
+  margin: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.production__image {
   display: block;
   background-color: #dfdfe1;
   width: 260px;
   height: 150px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .production__description {

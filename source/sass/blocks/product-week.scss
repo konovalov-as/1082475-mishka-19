@@ -1,3 +1,8 @@
+.product-week__wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .product-week__title {
   margin: 0;
 }
@@ -34,4 +39,13 @@
   width: 260px;
   height: 315px;
   background-color: $color-grey-2;
+}
+
+.product-week__price {
+  display: block;
+  text-align: center;
+}
+
+.product-week__order {
+  display: block;
 }
