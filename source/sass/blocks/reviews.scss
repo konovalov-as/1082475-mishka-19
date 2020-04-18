@@ -31,7 +31,7 @@
 }
 
 .reviews__btn {
-  // vertical-align: top;
+  vertical-align: top;
   width: 130px;
   height: 52px;
   border: none;
@@ -48,4 +48,16 @@
 
 .reviews__btn--next {
   background-image: url("../img/icon-right-arrow.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__text {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }

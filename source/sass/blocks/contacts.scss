@@ -27,3 +27,33 @@
   height: 457px;
   background-color: #f4ead8;
 }
+
+.contacts__box-map--center {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    position: relative;
+    font-size: 43px;
+    line-height: 1.16;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: 0;
+      transform: translateY(25%);
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .contacts__block {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+}

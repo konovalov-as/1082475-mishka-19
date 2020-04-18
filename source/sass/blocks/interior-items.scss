@@ -41,3 +41,20 @@
     background-image: url("../img/icon-toy.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .interior-items {
+    display: flex;
+    margin-left: 52px;
+    margin-right: 52px;
+  }
+
+  .interior-items__link-block {
+    flex-grow: 1;
+  }
+
+  .interior-items__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

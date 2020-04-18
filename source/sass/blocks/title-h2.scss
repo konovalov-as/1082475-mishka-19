@@ -3,3 +3,10 @@
   font-size: 25px;
   line-height: 1.2;
 }
+
+@media (min-width: $tablet-width) {
+  .title-h2 {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}

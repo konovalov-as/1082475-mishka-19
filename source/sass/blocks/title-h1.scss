@@ -4,3 +4,10 @@
   line-height: 1.11;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .title-h1 {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}

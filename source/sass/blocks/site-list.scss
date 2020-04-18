@@ -17,3 +17,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+}

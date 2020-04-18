@@ -43,9 +43,26 @@
 
 .product-week__price {
   display: block;
+  color: $color-grey-1;
   text-align: center;
 }
 
 .product-week__order {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .product-week__subtitle {
+    line-height: 1;
+  }
+
+  .product-week__description {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .product-week__price {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }

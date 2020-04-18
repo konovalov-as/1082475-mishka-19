@@ -6,3 +6,10 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .list-emai {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+}

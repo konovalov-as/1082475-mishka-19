@@ -40,3 +40,10 @@
   color: $color-grey-1;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .production__description {
+    font-size: 15px;
+    line-height: 2;
+  }
+}
