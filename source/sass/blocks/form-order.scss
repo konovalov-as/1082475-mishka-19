@@ -10,3 +10,9 @@
   color: $color-green-1;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .form-order__legend {
+    text-align: center;
+  }
+}

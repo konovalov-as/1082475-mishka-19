@@ -57,3 +57,10 @@
     line-height: 1.76;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+}

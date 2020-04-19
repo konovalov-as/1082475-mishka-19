@@ -60,4 +60,23 @@
     font-size: 18px;
     line-height: 1.33;
   }
+
+  .reviews__author-nickname {
+    font-size: 17px;
+    line-height: 1.76;
+    color: $color-grey-1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__author-name {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .reviews__author-nickname {
+    font-size: 17px;
+    line-height: 1.76;
+    color: $color-grey-1;
+  }
 }

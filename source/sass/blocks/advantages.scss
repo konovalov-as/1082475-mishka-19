@@ -73,3 +73,10 @@
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}
