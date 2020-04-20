@@ -42,8 +42,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__title {
+    display: flex;
+    order: 2;
+  }
+
+  .production__image {
+    width: 688px;
+    height: 455px;
+  }
+
   .production__description {
     font-size: 15px;
-    line-height: 2;
+    line-height: -1;
+    order: 3;
+  }
+
+  .production__make-order {
+    order: 4;
   }
 }

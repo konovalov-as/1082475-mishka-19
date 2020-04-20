@@ -91,34 +91,39 @@
     <div class="container">
       <section class="product-week">
         <div class="product-week__wrapper">
-          <h2 class="title-h2 product-week__title">Вязаные корзинки</h2>
-          <span class="product-week__subtitle">Товар недели</span>
-          <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
-            трех размерах.</p>
-          <table class="product-week__characteristics">
-            <tr class="product-week__row">
-              <td class="product-week__value">Цвет:</td>
-              <td class="product-week__field">«Тиффани»/серый</td>
-            </tr>
-            <tr class="product-week__row">
-              <td class="product-week__value">Диаметр:</td>
-              <td class="product-week__field">25 см</td>
-            </tr>
-            <tr class="product-week__row">
-              <td class="product-week__value">Высота:</td>
-              <td class="product-week__field">15 см</td>
-            </tr>
-          </table>
-          <div class="product-week__box-image">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/triple-set-mobile@1x.jpg">
-              <img class="product-week__image" src="img/triple-set-mobile@1x.jpg"
-                alt="Фото вязаных корзинок трех размеров">
-            </picture>
+          <div class="product-week__block-1">
+            <h2 class="title-h2 product-week__title">Вязаные корзинки</h2>
+            <span class="product-week__subtitle">Товар недели</span>
           </div>
-          <span class="product-week__price">Цена: 990 руб.</span>
-          <a class="product-week__order button" href="order.html">Заказать</a>
+
+          <div class="product-week__block-2">
+            <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
+              трех размерах.</p>
+            <table class="product-week__characteristics">
+              <tr class="product-week__row">
+                <td class="product-week__value">Цвет:</td>
+                <td class="product-week__field">«Тиффани»/серый</td>
+              </tr>
+              <tr class="product-week__row">
+                <td class="product-week__value">Диаметр:</td>
+                <td class="product-week__field">25 см</td>
+              </tr>
+              <tr class="product-week__row">
+                <td class="product-week__value">Высота:</td>
+                <td class="product-week__field">15 см</td>
+              </tr>
+            </table>
+            <div class="product-week__box-image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+                <img class="product-week__image" src="img/triple-set-mobile@1x.jpg"
+                  alt="Фото вязаных корзинок трех размеров">
+              </picture>
+            </div>
+            <span class="product-week__price">Цена: 990 руб.</span>
+            <a class="product-week__order button" href="order.html">Заказать</a>
+          </div>
         </div>
       </section>
     </div>
@@ -139,8 +144,8 @@
       </section>
     </div>
 
-    <div class="container">
-      <section class="reviews">
+    <section class="reviews">
+      <div class="container">
         <div class="reviews__wrapper">
           <h2 class="title-h2 reviews__title">Отзывы</h2>
           <div class="reviews__list">
@@ -153,17 +158,19 @@
               <cite class="reviews__author-name">Анастасия Красильникова <span
                   class="reviews__author-nickname">@misssssiskras</span></cite>
             </blockquote>
-            <button class="reviews__btn reviews__btn--prev" type="button">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </button>
-            <button class="reviews__btn reviews__btn--next" type="button">
-              <span class="visually-hidden">Следующий отзыв</span>
-            </button>
+            <div class="reviews__btn-block">
+              <button class="reviews__btn reviews__btn--prev" type="button">
+                <span class="visually-hidden">Предыдущий отзыв</span>
+              </button>
+              <button class="reviews__btn reviews__btn--next" type="button">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </button>
+            </div>
           </div>
           <a class="reviews__write button button--fs18" href="write-review.html">Написать</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="contacts">
       <div class="container">

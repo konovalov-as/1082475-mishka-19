@@ -32,6 +32,10 @@
   text-align: center;
 }
 
+.contacts__write-to-us {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__title {
     position: relative;
@@ -55,6 +59,14 @@
   .contacts__block {
     font-size: 17px;
     line-height: 1.76;
+  }
+
+  .contacts__block tbody {
+    display: flex;
+  }
+
+  .contacts__row {
+    width: 280px;
   }
 }
 

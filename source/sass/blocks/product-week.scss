@@ -52,13 +52,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-week__block-1 {
+    display: flex;
+    align-items: center;
+  }
+
   .product-week__subtitle {
     line-height: 1;
+    text-align: center;
   }
 
   .product-week__description {
     font-size: 17px;
     line-height: 1.76;
+  }
+
+  .product-week__block-2 {
+    position: relative;
+    max-width: 300px;
+    min-height: 404px;
+  }
+
+  .product-week__box-image {
+    position: absolute;
+    top: 0;
+    right: -330px;
   }
 
   .product-week__price {

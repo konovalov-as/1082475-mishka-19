@@ -76,7 +76,37 @@
 
 @media (min-width: $tablet-width) {
   .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 20px;
     line-height: 1.1;
+  }
+
+  .advantages__item {
+    max-width: 300px;
+  }
+
+  .advantages__item--flower {
+    order: -6;
+  }
+
+  .advantages__item--ball {
+    order: -5;
+  }
+
+  .advantages__item--money {
+    order: -4;
+  }
+
+  .advantages__item--rocket {
+    order: -3;
+  }
+
+  .advantages__item--heart {
+    order: -2;
+  }
+
+  .advantages__item--gift {
+    order: -1;
   }
 }

@@ -29,9 +29,17 @@
     line-height: 1.76;
   }
 
+  .custom-knitting__inner {
+    display: flex;
+  }
+
   .custom-knitting__required-fields {
     font-size: 17px;
     line-height: 1.76;
     text-align: right;
+  }
+
+  .custom-knitting__send-order {
+    order: -1;
   }
 }
