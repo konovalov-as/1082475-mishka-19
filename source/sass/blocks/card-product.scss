@@ -76,3 +76,14 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card-product__wrapper {
+    display: block;
+    max-width: 316px;
+  }
+
+  .card-product__description {
+    display: block;
+  }
+}

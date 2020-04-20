@@ -71,8 +71,36 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    margin-left: 100px;
+  }
+
   .contacts__title {
     font-size: 53px;
     line-height: 1.08;
+
+    &::after {
+      top: -50%;
+      left: -70px;
+    }
+  }
+
+  .contacts__block tbody {
+    display: block;
+  }
+
+  .contacts__box-map {
+    width: 525px;
+  }
+
+  .contacts__write-to-us {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
   }
 }

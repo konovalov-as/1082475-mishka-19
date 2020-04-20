@@ -110,3 +110,9 @@
     order: -1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    max-width: 400px;
+  }
+}

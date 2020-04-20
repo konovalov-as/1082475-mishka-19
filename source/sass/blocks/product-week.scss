@@ -84,3 +84,30 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-week__wrapper {
+    margin-left: 200px;
+  }
+
+  .product-week__block-1 {
+    display: block;
+    position: relative;
+  }
+
+  .product-week__subtitle {
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    transform: translateY(-50%);
+  }
+
+  .product-week__block-2 {
+    min-height: 636px;
+  }
+
+  .product-week__box-image {
+    top: -20px;
+    z-index: -10;
+  }
+}
