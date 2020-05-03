@@ -32,7 +32,7 @@
                 <a class="site-list__link site-list__custom-knitting" href="custom-knitting.html">Вязание на заказ</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="search-site.html">
+                <a class="site-list__link site-list__link--search" href="search-site.html">
                   <svg version="1.1" id="Layer_search" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
                     viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -43,7 +43,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="cart.html">
+                <a class="site-list__link site-list__link--cart" href="cart.html">
                   <svg version="1.1" id="Layer_cart" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18"
                     viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
@@ -81,11 +81,14 @@
             <li class="list-goods__item card-product">
               <div class="card-product__wrapper">
                 <a class="card-product__link-image" href="more-details.html">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-                    <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" alt="Фото зайчика-попрыгайчика">
-                  </picture>
+                  <div class="card-product__picture">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+                      <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                      <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg"
+                        alt="Фото зайчика-попрыгайчика">
+                    </picture>
+                  </div>
                 </a>
                 <div class="card-product__description">
                   <h3 class="title-h3 card-product__title">
@@ -111,11 +114,13 @@
             <li class="list-goods__item card-product">
               <div class="card-product__wrapper">
                 <a class="card-product__link-image" href="more-details.html">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-                    <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Фото корзинки для белья">
-                  </picture>
+                  <div class="card-product__picture">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+                      <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                      <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Фото корзинки для белья">
+                    </picture>
+                  </div>
                 </a>
                 <div class="card-product__description">
                   <h3 class="title-h3 card-product__title">
@@ -141,12 +146,14 @@
             <li class="list-goods__item card-product">
               <div class="card-product__wrapper">
                 <a class="card-product__link-image" href="more-details.html">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-                    <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg"
-                      alt="Фото большой корзины с игрушками">
-                  </picture>
+                  <div class="card-product__picture">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+                      <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                      <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg"
+                        alt="Фото большой корзины с игрушками">
+                    </picture>
+                  </div>
                 </a>
                 <div class="card-product__description">
                   <h3 class="title-h3 card-product__title">
@@ -178,11 +185,13 @@
       <section class="production">
         <div class="production__wrapper">
           <h3 class="title-h3 production__title">Процесс производства</h3>
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-            <img class="production__image" src="img/video-mobile@1x.jpg" alt="О том как появляются наши товары">
-          </picture>
+          <div class="production__picture">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <img class="production__image" src="img/video-mobile@1x.jpg" alt="О том как появляются наши товары">
+            </picture>
+          </div>
           <div class="production__inner">
             <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
               том, как появляются наши товары.

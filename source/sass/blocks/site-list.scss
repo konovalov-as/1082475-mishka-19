@@ -22,6 +22,16 @@
   text-decoration: none;
 }
 
+.site-list__link--search svg {
+  width: 18px;
+  height: 18px;
+}
+
+.site-list__link--cart svg {
+  width: 21px;
+  height: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;

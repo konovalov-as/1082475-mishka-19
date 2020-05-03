@@ -11,6 +11,16 @@
   padding: 0;
 }
 
+.field-text__svg--phone {
+  width: 25px;
+  height: 24px;
+}
+
+.field-text__svg--email {
+  width: 32px;
+  height: 21px;
+}
+
 @media (min-width: $tablet-width) {
   .field-text {
     font-size: 19px;

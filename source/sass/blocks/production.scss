@@ -18,11 +18,14 @@
   }
 }
 
+.production__picture {
+  width: 260px;
+  height: 150px;
+}
+
 .production__image {
   display: block;
   background-color: #dfdfe1;
-  width: 260px;
-  height: 150px;
 
   &::after {
     content: "";
@@ -52,8 +55,8 @@
     order: 2;
   }
 
-  .production__image {
-    width: 688px;
+  .production__picture {
+    width: 668px;
     height: 455px;
   }
 
@@ -78,6 +81,10 @@
     display: block;
     align-self: flex-start;
     margin-left: auto;
+  }
+
+  .production__picture {
+    width: 682px;
   }
 
   .production__inner {

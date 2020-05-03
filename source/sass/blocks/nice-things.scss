@@ -28,3 +28,9 @@
     margin-top: 150px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nice-things__inner {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+}
