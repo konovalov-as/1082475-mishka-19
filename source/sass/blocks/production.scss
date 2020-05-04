@@ -20,6 +20,8 @@
 
 .production__image {
   display: block;
+  width: 260px;
+  height: 150px;
   background-color: #dfdfe1;
 
   &::after {
@@ -55,6 +57,11 @@
     height: 455px;
   }
 
+  .production__image {
+    width: 668px;
+    height: 455px;
+  }
+
   .production__inner {
     order: 3;
   }
@@ -79,6 +86,10 @@
   }
 
   .production__picture {
+    width: 682px;
+  }
+
+  .production__image {
     width: 682px;
   }
 
