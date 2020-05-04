@@ -1,6 +1,7 @@
 .form-order__fieldset {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .form-order__legend {
@@ -9,4 +10,16 @@
   line-height: 0.94;
   color: $color-green-1;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-order__fieldset {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-order__legend {
+    text-align: center;
+  }
 }

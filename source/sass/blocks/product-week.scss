@@ -35,3 +35,80 @@
   height: 315px;
   background-color: $color-grey-2;
 }
+
+.product-week__price {
+  display: block;
+  color: $color-grey-1;
+  text-align: center;
+}
+
+.product-week__order {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .product-week__block-1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .product-week__subtitle {
+    line-height: 1;
+    text-align: center;
+  }
+
+  .product-week__description {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .product-week__block-2 {
+    position: relative;
+    max-width: 300px;
+    min-height: 404px;
+  }
+
+  .product-week__box-image {
+    position: absolute;
+    top: 0;
+    right: -330px;
+    z-index: -10;
+    width: 333px;
+    height: 404px;
+  }
+
+  .product-week__price {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-week__wrapper {
+    margin-left: 200px;
+  }
+
+  .product-week__block-1 {
+    display: block;
+    position: relative;
+  }
+
+  .product-week__subtitle {
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    transform: translateY(-50%);
+  }
+
+  .product-week__block-2 {
+    min-height: 636px;
+  }
+
+  .product-week__box-image {
+    top: -20px;
+    right: -500px;
+    z-index: -10;
+    width: 525px;
+    height: 636px;
+  }
+}

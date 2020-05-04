@@ -1,3 +1,9 @@
+.page-main__block {
+  display: flex;
+  min-height: 177px;
+  background-color: $color-grey-2;
+}
+
 .page-main__title {
-  margin: 0;
+  margin: auto;
 }

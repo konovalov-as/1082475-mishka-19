@@ -18,7 +18,84 @@
 }
 
 .contacts__box-map {
-  width: 320px;
+  width: auto;
   height: 457px;
   background-color: #f4ead8;
+}
+
+.contacts__box-map--center {
+  text-align: center;
+}
+
+.contacts__write-to-us {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    position: relative;
+    font-size: 43px;
+    line-height: 1.16;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: 0;
+      transform: translateY(25%);
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .contacts__block {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__block tbody {
+    display: flex;
+  }
+
+  .contacts__row {
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    margin-left: 100px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 1.08;
+
+    &::after {
+      top: -50%;
+      left: -70px;
+    }
+  }
+
+  .contacts__block tbody {
+    display: block;
+  }
+
+  .contacts__box-map {
+    width: 525px;
+  }
+
+  .contacts__write-to-us {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+  }
 }

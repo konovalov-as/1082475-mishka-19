@@ -1,0 +1,33 @@
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__logo-link {
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: $base-color;
+  text-decoration: none;
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+}

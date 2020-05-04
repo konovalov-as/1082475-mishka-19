@@ -4,10 +4,72 @@
   padding: 0;
 }
 
+.site-list__item {
+  margin-left: 76px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:nth-last-child(-n+2) {
+    display: none;
+  }
+}
+
 .site-list__link {
   font-weight: bold;
   font-size: 17px;
   line-height: 1.41;
   color: $base-color;
   text-decoration: none;
+}
+
+.site-list__link svg {
+  fill: #ececec;
+}
+
+.site-list__link--search svg {
+  width: 18px;
+  height: 18px;
+}
+
+.site-list__link--cart svg {
+  width: 21px;
+  height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .site-list__link {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .site-list__cart {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    &:nth-last-child(-n+2) {
+      display: block;
+    }
+  }
+
+  .site-list__catalog,
+  .site-list__custom-knitting,
+  .site-list__new-arrivals,
+  .site-list__sale {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }

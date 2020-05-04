@@ -1,3 +1,9 @@
+.field-text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.06;
+}
+
 .field-text__input {
   font-size: 17px;
   line-height: 1.06;
@@ -5,6 +11,28 @@
   padding: 0;
 }
 
-.field-text__input--fs19 {
-  font-size: 19px;
+.field-text__svg {
+  fill: #cccccc;
+}
+
+.field-text__svg--phone {
+  width: 25px;
+  height: 24px;
+}
+
+.field-text__svg--email {
+  width: 32px;
+  height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .field-text__input {
+    font-size: 19px;
+    line-height: 0.95;
+  }
 }

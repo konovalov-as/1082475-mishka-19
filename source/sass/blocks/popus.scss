@@ -1,6 +1,7 @@
 .popus__tite {
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .popus__label {
@@ -20,4 +21,16 @@
   background-color: $color-green-1;
   cursor: pointer;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .popus__tite {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+
+  .popus__label {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }

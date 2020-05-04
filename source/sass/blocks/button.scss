@@ -8,11 +8,13 @@
   text-decoration: none;
 }
 
-.button--fs18 {
-  font-size: 18px;
-  line-height: 1.11;
-}
-
 .button--hl16 {
   line-height: 0.94;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button--fs18 {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }

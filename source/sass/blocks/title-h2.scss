@@ -3,3 +3,17 @@
   font-size: 25px;
   line-height: 1.2;
 }
+
+@media (min-width: $tablet-width) {
+  .title-h2 {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-h2 {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+}
