@@ -1,5 +1,6 @@
 .nice-things__wrapper {
   background-color: #f9f9f9;
+  margin-bottom: 30px;
 }
 
 .nice-things__inner {
@@ -12,25 +13,61 @@
 }
 
 .nice-things__title {
-  margin: 0;
+  max-width: 246px;
+  margin: 0 auto;
   margin-top: 93px;
 }
 
 @media (min-width: $tablet-width) {
+  .nice-things {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .nice-things__wrapper {
+    margin-bottom: 50px;
+  }
+
   .nice-things__inner {
     background-image: url("../img/hero-tablet@1x.jpg");
     min-height: 746px;
   }
 
   .nice-things__title {
+    max-width: 498px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .nice-things {
+    &::after {
+      height: 34px;
+    }
+  }
+
+  .nice-things__wrapper {
+    margin-bottom: 70px;
+  }
+
   .nice-things__inner {
     background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .nice-things__title {
+    max-width: 620px;
   }
 }

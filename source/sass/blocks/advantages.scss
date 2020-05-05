@@ -1,5 +1,10 @@
+.advantages__wrapper {
+  margin-bottom: 60px;
+}
+
 .advantages__title {
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages__list {
@@ -13,15 +18,24 @@
 }
 
 .advantages__item {
+  margin-bottom: 30px;
+
   &::before {
     content: "";
     display: block;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 .advantages__item--flower {
+  max-width: 175px;
+
   &::before {
     width: 32px;
     height: 37px;
@@ -30,6 +44,8 @@
 }
 
 .advantages__item--money {
+  max-width: 201px;
+
   &::before {
     width: 47px;
     height: 27px;
@@ -38,6 +54,8 @@
 }
 
 .advantages__item--heart {
+  max-width: 182px;
+
   &::before {
     width: 34px;
     height: 27px;
@@ -46,6 +64,8 @@
 }
 
 .advantages__item--ball {
+  max-width: 212px;
+
   &::before {
     width: 35px;
     height: 34px;
@@ -54,6 +74,8 @@
 }
 
 .advantages__item--rocket {
+  max-width: 250px;
+
   &::before {
     width: 55px;
     height: 23px;
@@ -62,6 +84,8 @@
 }
 
 .advantages__item--gift {
+  max-width: 200px;
+
   &::before {
     width: 33px;
     height: 32px;
@@ -70,6 +94,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    margin-bottom: 80px;
+  }
+
+  .advantages__title {
+    margin-bottom: 45px;
+  }
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -78,36 +110,47 @@
   }
 
   .advantages__item {
-    max-width: 300px;
+    margin-right: 50px;
+    margin-bottom: 50px;
   }
 
   .advantages__item--flower {
+    max-width: 210px;
     order: -6;
   }
 
   .advantages__item--ball {
+    max-width: 253px;
     order: -5;
   }
 
   .advantages__item--money {
+    max-width: 235px;
     order: -4;
   }
 
   .advantages__item--rocket {
+    max-width: 300px;
     order: -3;
   }
 
   .advantages__item--heart {
+    max-width: 212px;
     order: -2;
   }
 
   .advantages__item--gift {
+    max-width: 233px;
     order: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    margin-left: 150px;
+  }
+
   .advantages__item {
-    max-width: 400px;
+    margin-right: 140px;
   }
 }

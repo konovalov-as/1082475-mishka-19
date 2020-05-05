@@ -1,8 +1,13 @@
+.contacts {
+  margin-bottom: 40px;
+}
+
 .contacts__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.67;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .contacts__block {
@@ -12,15 +17,38 @@
   border-collapse: collapse;
 }
 
+.contacts__row {
+  margin-bottom: 30px;
+}
+
 .contacts__value,
 .contacts__field {
+  border: none;
   padding: 0;
+  padding-bottom: 30px;
+}
+
+.contacts__value {
+  width: 80px;
+  vertical-align: top;
+  padding-right: 25px;
+}
+
+.contacts__field--email {
+  &::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 1px;
+    background-color: #71d6c1;
+  }
 }
 
 .contacts__box-map {
   width: auto;
   height: 457px;
   background-color: #f4ead8;
+  margin-bottom: 35px;
 }
 
 .contacts__box-map--center {
@@ -32,17 +60,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 55px;
+  }
+
   .contacts__title {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     font-size: 43px;
     line-height: 1.16;
 
     &::after {
       content: "";
-      position: absolute;
-      top: -50%;
-      right: 0;
-      transform: translateY(25%);
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -54,6 +83,7 @@
   .contacts__block {
     font-size: 17px;
     line-height: 1.76;
+    margin-bottom: 50px;
   }
 
   .contacts__block tbody {
@@ -62,6 +92,20 @@
 
   .contacts__row {
     width: 280px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-right: 50px;
+    }
+  }
+
+  .contacts__box-map {
+    margin-bottom: 55px;
+  }
+
+  .contacts__write-to-us {
+    max-width: 230px;
+    margin: 0 auto;
   }
 }
 
@@ -72,6 +116,7 @@
   }
 
   .contacts__wrapper {
+    margin-top: 80px;
     margin-left: 100px;
   }
 
@@ -80,8 +125,8 @@
     line-height: 1.08;
 
     &::after {
-      top: -50%;
-      left: -70px;
+      order: -1;
+      transform: translateX(-50px);
     }
   }
 
@@ -90,12 +135,13 @@
   }
 
   .contacts__box-map {
+    margin-bottom: 0;
     width: 525px;
   }
 
   .contacts__write-to-us {
     position: absolute;
-    left: 100px;
+    left: 150px;
     bottom: 0;
   }
 }

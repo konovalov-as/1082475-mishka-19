@@ -71,31 +71,28 @@
   <main class="page-main">
     <section class="nice-things">
       <div class="nice-things__wrapper">
-        <div class="container">
-          <div class="nice-things__inner">
-            <h1 class="title-h1 nice-things__title">Милые штуки ручной работы для дома</h1>
+        <div class="nice-things__inner">
+          <h1 class="title-h1 nice-things__title">Милые штуки ручной работы для дома</h1>
+        </div>
+        <div class="interior-items">
+          <div class="interior-items__link-block">
+            <a class="interior-items__link interior-items__link--interior" href="interior-items.html">Предметы
+              интерьера</a>
           </div>
-          <div class="interior-items">
-            <div class="interior-items__link-block">
-              <a class="interior-items__link interior-items__link--interior" href="interior-items.html">Предметы
-                интерьера</a>
-            </div>
-            <div class="interior-items__link-block">
-              <a class="interior-items__link interior-items__link--toy" href="kids-toys.html">Детские игрушки</a>
-            </div>
+          <div class="interior-items__link-block">
+            <a class="interior-items__link interior-items__link--toy" href="kids-toys.html">Детские игрушки</a>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="container">
-      <section class="product-week">
+    <section class="product-week">
+      <div class="container">
         <div class="product-week__wrapper">
           <div class="product-week__block-1">
             <h2 class="title-h2 product-week__title">Вязаные корзинки</h2>
             <span class="product-week__subtitle">Товар недели</span>
           </div>
-
           <div class="product-week__block-2">
             <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
               трех размерах.</p>
@@ -125,8 +122,8 @@
             <a class="product-week__order button" href="order.html">Заказать</a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <div class="container">
       <section class="advantages">
@@ -179,7 +176,7 @@
           <table class="contacts__block">
             <tr class="contacts__row">
               <td class="contacts__value">e-mail:</td>
-              <td class="contacts__field">info@mimimishkashop.ru</td>
+              <td class="contacts__field contacts__field--email">info@mimimishkashop.ru</td>
             </tr>
             <tr class="contacts__row">
               <td class="contacts__value">адрес:</td>
@@ -188,7 +185,6 @@
           </table>
         </div>
       </div>
-
       <div class="contacts__picture-map">
         <div class="visually-hidden contacts__box-map contacts__box-map--center">
           <picture>
@@ -200,7 +196,9 @@
         </div>
         <div class="contacts__box-map" id="map"></div>
       </div>
-      <a class="contacts__write-to-us button button--fs18" href="write-to-us.html">Напишите нам</a>
+      <div class="container">
+        <a class="contacts__write-to-us button button--fs18" href="write-to-us.html">Напишите нам</a>
+      </div>
     </section>
 
     <footer class="page-footer">
@@ -278,40 +276,40 @@
 
   </main>
 
-  <section class="popus">
-    <div class="container">
-      <div class="popus__wrapper">
-        <h2 class="title-h2 popus__tite">Добавить в корзину</h2>
-        <form class="popus__choose-size" action="https://echo.htmlacademy.ru" method="post">
-          <p class="popus__label">Выберите размер:</p>
-          <ul class="popus__list size-list">
+  <!-- <div class="container"> -->
+    <section class="popup">
+      <div class="popup__wrapper">
+        <h2 class="title-h2 popup__tite">Добавить в корзину</h2>
+        <form class="popup__choose-size" action="https://echo.htmlacademy.ru" method="post">
+          <p class="popup__label">Выберите размер:</p>
+          <ul class="popup__list size-list">
             <li class="size-list__item">
-              <label class="field-checkbox field-checkbox--popus">
-                <input class="visually-hidden field-checkbox__input" type="checkbox" name="size-s">
+              <label class="field-checkbox field-checkbox--popup">
+                <input class="visually-hidden field-checkbox__input" type="checkbox" name="size-s" checked>
                 <span class="field-checkbox__indicator"></span>
                 <span class="field-checkbox__label">S</span>
               </label>
             </li>
             <li class="size-list__item">
-              <label class="field-checkbox field-checkbox--popus">
+              <label class="field-checkbox field-checkbox--popup">
                 <input class="visually-hidden field-checkbox__input" type="checkbox" name="size-m" id="size-m">
                 <span class="field-checkbox__indicator"></span>
                 <span class="field-checkbox__label">M</span>
               </label>
             </li>
             <li class="size-list__item">
-              <label class="field-checkbox field-checkbox--popus">
+              <label class="field-checkbox field-checkbox--popup">
                 <input class="visually-hidden field-checkbox__input" type="checkbox" name="size-l">
                 <span class="field-checkbox__indicator"></span>
                 <span class="field-checkbox__label">L</span>
               </label>
             </li>
           </ul>
-          <button class="popus__submit-size" type="submit">Добавить</button>
+          <button class="popup__submit-size" type="submit">Добавить</button>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
+  <!-- </div> -->
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=04ee10fc-51b0-4eb0-bece-6806ca0cad49&lang=ru_RU"></script>
   <script src="js/map.js"></script>

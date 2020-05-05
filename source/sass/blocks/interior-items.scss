@@ -24,6 +24,7 @@
 
 .interior-items__link--interior {
   background-color: $color-green-1;
+  padding-right: 60px;
 
   &::after {
     width: 40px;
@@ -34,6 +35,7 @@
 
 .interior-items__link--toy {
   background-color: $color-green-2;
+  padding-right: 80px;
 
   &::after {
     width: 60px;
@@ -56,5 +58,21 @@
   .interior-items__link {
     font-size: 20px;
     line-height: 1.5;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+
+    &::after {
+      top: 25px;
+      right: 20px;
+    }
+  }
+
+  .interior-items__link--interior {
+    padding-right: 70px;
+  }
+
+  .interior-items__link--toy {
+    padding-right: 90px;
   }
 }

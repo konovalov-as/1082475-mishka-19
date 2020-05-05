@@ -1,17 +1,33 @@
-.popus__tite {
-  margin: 0;
+.popup__wrapper {
+  max-width: 320px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+  margin: 0 auto;
+}
+
+.popup__tite {
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 25px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.popus__label {
+.popup__label {
   font-size: 15px;
   line-height: 2;
   color: $color-grey-1;
   margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.popus__submit-size {
+.popup__submit-size {
+  width: 100%;
   font-size: 17px;
   line-height: 0.94;
   color: $color-white-1;
@@ -20,17 +36,39 @@
   border: none;
   background-color: $color-green-1;
   cursor: pointer;
-  padding: 0;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: $tablet-width) {
-  .popus__tite {
+  .popup__wrapper {
+    max-width: 566px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .popup__tite {
+    max-width: 100%;
     font-size: 30px;
     line-height: 1.9;
   }
 
-  .popus__label {
+  .popup__choose-size {
+    text-align: center;
+  }
+
+  .popup__label {
     font-size: 17px;
     line-height: 1.76;
+  }
+
+  .popup__submit-size {
+    max-width: 350px;
   }
 }
