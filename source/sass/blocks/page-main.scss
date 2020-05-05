@@ -7,3 +7,28 @@
 .page-main__title {
   margin: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__block {
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 24px;
+      width: 100%;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__block {
+    &::after {
+      height: 34px;
+    }
+  }
+}

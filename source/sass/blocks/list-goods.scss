@@ -4,8 +4,22 @@
   padding: 0;
 }
 
+.list-goods__item {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $desktop-width) {
   .list-goods {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .list-goods__item {
+    margin-right: 51px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
