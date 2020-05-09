@@ -26,7 +26,7 @@
 // }
 
 // checked
-.field-checkbox__input:checked + .field-checkbox__indicator::before {
+.field-checkbox__input:checked + .field-checkbox__indicator--order::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -73,7 +73,7 @@
   box-shadow: 0 0 0 4px #4a90e2;
 }
 
-.field-checkbox__input:checked:focus + .field-checkbox__indicator::before {
+.field-checkbox__input:checked:focus + .field-checkbox__indicator--order::before {
   background-image: url("../img/icon-tick.svg");
 }
 
