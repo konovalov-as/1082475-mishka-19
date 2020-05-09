@@ -64,46 +64,46 @@
             <p class="main-nav__delivery">Бесплатная доставка по России</p>
           </div>
         </nav>
-
       </div>
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main overflow-x">
     <div class="page-main__block">
       <h1 class="title-h1 page-main__title">Вязание на заказ</h1>
     </div>
 
-    <div class="container">
-      <section class="custom-knitting">
-        <div class="custom-knitting__wrapper">
-          <h2 class="visually-hidden">Форма заказа</h2>
-          <p class="custom-knitting__description">
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-            уточнить детали.
-          </p>
-          <form class="custom-knitting__form form-order" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-order__fieldset">
-              <div class="form-order__legend">Тип</div>
-              <ul class="form-order__types list-types">
-                <li class="list-types__item">
-                  <label class="field-radio">
-                    <input class="field-radio__input visually-hidden" name="type" type="radio" value="interior-items"
-                      checked>
-                    <span class="field-radio__indicator"></span>
-                    <span class="field-radio__label">Аксессуар для интерьера</span>
-                  </label>
-                </li>
-                <li class="list-types__item">
-                  <label class="field-radio">
-                    <input class="field-radio__input visually-hidden" name="type" type="radio" value="kids-toys">
-                    <span class="field-radio__indicator"></span>
-                    <span class="field-radio__label">Детская игрушка</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form-order__fieldset">
+    <section class="custom-knitting">
+      <div class="custom-knitting__wrapper">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <p class="custom-knitting__description container">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+          уточнить детали.
+        </p>
+        <form class="custom-knitting__form form-order" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form-order__fieldset form-order__fieldset--radio container">
+            <div class="form-order__legend">Тип</div>
+            <ul class="form-order__types list-types">
+              <li class="list-types__item">
+                <label class="field-radio">
+                  <input class="field-radio__input visually-hidden" name="type" type="radio" value="interior-items"
+                    checked>
+                  <span class="field-radio__indicator"></span>
+                  <span class="field-radio__label">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="list-types__item">
+                <label class="field-radio">
+                  <input class="field-radio__input visually-hidden" name="type" type="radio" value="kids-toys">
+                  <span class="field-radio__indicator"></span>
+                  <span class="field-radio__label">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="form-order__bg">
+            <fieldset class="form-order__fieldset container">
               <div class="form-order__legend">Цвет</div>
               <ul class="form-order__colors list-colors">
                 <li class="list-colors__item">
@@ -150,93 +150,97 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-order__fieldset">
-              <div class="form-order__legend">ФИО</div>
-              <ul class="form-order__name-list list-full-name">
-                <li class="list-full-name__item">
-                  <label class="field-text">
-                    <span class="field-text__label">Имя:</span>
-                    <input class="field-text__input" name="name" type="text" placeholder="Введите ваше имя*">
-                  </label>
-                </li>
-                <li class="list-full-name__item">
-                  <label class="field-text">
-                    <span class="field-text__label">Фамилия:</span>
-                    <input class="field-text__input" name="surname" type="text" placeholder="Укажите фамилию*">
-                  </label>
-                </li>
-                <li class="list-full-name__item">
-                  <label class="field-text">
-                    <span class="field-text__label">Отчество:</span>
-                    <input class="field-text__input" name="middle-name" type="text"
-                      placeholder="Отчество, если желаете">
+          </div>
+
+
+          <fieldset class="form-order__fieldset form-order__fieldset--full-name container">
+            <div class="form-order__legend">ФИО</div>
+            <ul class="form-order__name-list list-full-name">
+              <li class="list-full-name__item">
+                <label class="field-text">
+                  <span class="field-text__label">Имя:</span>
+                  <input class="field-text__input" name="name" type="text" placeholder="Введите ваше имя*">
+                </label>
+              </li>
+              <li class="list-full-name__item">
+                <label class="field-text">
+                  <span class="field-text__label">Фамилия:</span>
+                  <input class="field-text__input" name="surname" type="text" placeholder="Укажите фамилию*">
+                </label>
+              </li>
+              <li class="list-full-name__item">
+                <label class="field-text">
+                  <span class="field-text__label">Отчество:</span>
+                  <input class="field-text__input" name="middle-name" type="text" placeholder="Отчество, если желаете">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- <div class="form-order__block"> -->
+          <div class="form-order__bg">
+            <fieldset class="form-order__fieldset container">
+              <div class="form-order__legend">тел</div>
+              <ul class="form-order__phones list-phone">
+                <li class="list-phone__item">
+                  <label class="field-text field-text--phone">
+                    <span class="visually-hidden">Телефон:*</span>
+                    <input class="field-text__input field-text__input--phone" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                    <svg class="field-text__svg field-text__svg--phone" version="1.1" id="Layer_2"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333"
+                      enable-background="new 0 0 24.829 24.333" xml:space="preserve">
+                      <g>
+                        <g id="UrwUhy_2_">
+                          <g>
+                            <path
+                              d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z" />
+                          </g>
+                        </g>
+                        <path
+                          d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z" />
+                        <path
+                          d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z" />
+                        <path
+                          d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z" />
+                      </g>
+                    </svg>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <div class="form-order__block">
-              <fieldset class="form-order__fieldset">
-                <div class="form-order__legend">тел</div>
-                <ul class="form-order__phones list-phone">
-                  <li class="list-phone__item">
-                    <label class="field-text">
-                      <span class="visually-hidden">Телефон:*</span>
-                      <input class="field-text__input" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                      <svg class="field-text__svg field-text__svg--phone" version="1.1" id="Layer_2"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333"
-                        enable-background="new 0 0 24.829 24.333" xml:space="preserve">
-                        <g>
-                          <g id="UrwUhy_2_">
-                            <g>
-                              <path
-                                d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z" />
-                            </g>
-                          </g>
-                          <path
-                            d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z" />
-                          <path
-                            d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z" />
-                          <path
-                            d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z" />
-                        </g>
-                      </svg>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="form-order__fieldset">
-                <div class="form-order__legend">E-mail</div>
-                <ul class="form-order__email list-email">
-                  <li class="list-email__item">
-                    <label class="field-text">
-                      <span class="visually-hidden">E-mail:*</span>
-                      <input class="field-text__input" name="email" type="email" placeholder="Ваш Email*">
-                      <svg class="field-text__svg field-text__svg--email" xmlns="http://www.w3.org/2000/svg" width="32" height="21" viewBox="0 0 32 21">
-                        <path
-                          d="M28 0H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V4a4 4 0 00-4-4zM2 5.25l6.999 5.25L2 15.75zM30 17c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 003.599 0l4.369-3.277zm0-1.25l-7-5.25 7-5.25zm-12.801-2.148c-.35.263-.763.4-1.199.4a1.99 1.99 0 01-1.2-.4L10.665 10.5l-.833-.625L2 4.001V4c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2z" />
-                        </svg>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <fieldset class="form-order__fieldset">
-              <div class="form-order__legend">Доп</div>
-              <label class="field-text">
-                <span class="visually-hidden">Ваши пожелания к заказу</span>
-                <textarea class="field-text__input" name="more-description" rows="20"
-                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </label>
+            <fieldset class="form-order__fieldset container">
+              <div class="form-order__legend">E-mail</div>
+              <ul class="form-order__email list-email">
+                <li class="list-email__item">
+                  <label class="field-text field-text--email">
+                    <span class="visually-hidden">E-mail:*</span>
+                    <input class="field-text__input field-text__input--email" name="email" type="email" placeholder="Ваш Email*">
+                    <svg class="field-text__svg field-text__svg--email" xmlns="http://www.w3.org/2000/svg" width="32"
+                      height="21" viewBox="0 0 32 21">
+                      <path
+                        d="M28 0H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V4a4 4 0 00-4-4zM2 5.25l6.999 5.25L2 15.75zM30 17c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 003.599 0l4.369-3.277zm0-1.25l-7-5.25 7-5.25zm-12.801-2.148c-.35.263-.763.4-1.199.4a1.99 1.99 0 01-1.2-.4L10.665 10.5l-.833-.625L2 4.001V4c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2z" />
+                    </svg>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
-            <div class="custom-knitting__inner">
-              <small class="custom-knitting__required-fields">*Поля обязательны для заполнения</small>
-              <button class="custom-knitting__send-order button" type="submit">Отправить заказ</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </div>
+          </div>
+          <!-- </div> -->
+          <fieldset class="form-order__fieldset form-order__fieldset--additionally container">
+            <div class="form-order__legend">Доп</div>
+            <label class="field-text">
+              <span class="visually-hidden">Ваши пожелания к заказу</span>
+              <textarea class="field-text__input field-text__input--textarea" name="more-description" rows="5"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+          </fieldset>
+          <div class="custom-knitting__inner container">
+            <small class="custom-knitting__required-fields">*Поля обязательны для заполнения</small>
+            <button class="custom-knitting__send-order button" type="submit">Отправить заказ</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <footer class="page-footer">
       <div class="container">

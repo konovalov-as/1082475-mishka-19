@@ -3,3 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .list-colors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-colors__item {
+    max-width: 230px;
+    width: 100%;
+  }
+}

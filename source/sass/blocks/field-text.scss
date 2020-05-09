@@ -1,14 +1,44 @@
 .field-text {
+  display: block;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 17px;
   line-height: 1.06;
 }
 
+.field-text__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-text--phone,
+.field-text--email {
+  position: relative;
+}
+
+.field-text--phone svg,
+.field-text--email svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.field-text--phone .field-text__input,
+.field-text--email .field-text__input {
+  padding-right: 45px;
+}
+
 .field-text__input {
+  width: 100%;
   font-size: 17px;
   line-height: 1.06;
   color: rgba(68, 68, 68, 0.3);
   padding: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 .field-text__svg {
@@ -25,14 +55,40 @@
   height: 21px;
 }
 
+.field-text__input--textarea {
+  resize: none;
+  min-height: 140px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border: 2px solid #444444;
+}
+
 @media (min-width: $tablet-width) {
   .field-text {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
     font-size: 19px;
     line-height: 0.95;
+  }
+
+  .field-text__input--phone,
+  .field-text__input--email {
+    background-color: transparent;
+  }
+
+  .field-text__label {
+    margin-right: 26px;
   }
 
   .field-text__input {
     font-size: 19px;
     line-height: 0.95;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text {
+    max-width: 700px;
   }
 }

@@ -3,3 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .list-full-name {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .list-full-name {
+    max-width: 700px;
+  }
+}
