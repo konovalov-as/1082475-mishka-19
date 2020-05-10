@@ -19,17 +19,17 @@
             <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
           </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-menu-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link site-list__catalog" href="catalog-goods.html">Каталог товаров</a>
+                <a class="site-list__link site-list__link--catalog" href="catalog-goods.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__custom-knitting">Вязание на заказ</a>
+                <a class="site-list__link site-list__link--custom-knitting">Вязание на заказ</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--search" href="search-site.html">
@@ -55,10 +55,10 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__new-arrivals" href="">Новые поступления</a>
+                <a class="site-list__link site-list__link--new-arrivals" href="">Новые поступления</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__sale" href="">Распродажа</a>
+                <a class="site-list__link site-list__link--sale" href="">Распродажа</a>
               </li>
             </ul>
             <p class="main-nav__delivery">Бесплатная доставка по России</p>
@@ -184,7 +184,8 @@
                 <li class="list-phone__item">
                   <label class="field-text field-text--phone">
                     <span class="visually-hidden">Телефон:*</span>
-                    <input class="field-text__input field-text__input--phone" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                    <input class="field-text__input field-text__input--phone" name="phone" type="tel"
+                      placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                     <svg class="field-text__svg field-text__svg--phone" version="1.1" id="Layer_2"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333"
@@ -214,7 +215,8 @@
                 <li class="list-email__item">
                   <label class="field-text field-text--email">
                     <span class="visually-hidden">E-mail:*</span>
-                    <input class="field-text__input field-text__input--email" name="email" type="email" placeholder="Ваш Email*">
+                    <input class="field-text__input field-text__input--email" name="email" type="email"
+                      placeholder="Ваш Email*">
                     <svg class="field-text__svg field-text__svg--email" xmlns="http://www.w3.org/2000/svg" width="32"
                       height="21" viewBox="0 0 32 21">
                       <path
@@ -318,6 +320,8 @@
     </footer>
 
   </main>
+
+  <script src="js/script.js"></script>
 
 </body>
 

@@ -13,3 +13,31 @@
     margin: 0;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
+
+  .main-nav--closed .main-menu-toggle {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  .main-nav--opened .main-menu-toggle {
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/icon-menu-close.svg");
+  }
+
+  .main-nav--nojs .main-menu-toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}

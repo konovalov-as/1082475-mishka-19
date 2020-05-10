@@ -35,6 +35,25 @@
   height: 18px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    border-bottom: 1px solid #ececec;
+
+    &:first-child {
+      border-top: 1px solid #ececec;
+    }
+  }
+
+  .site-list__link--catalog,
+  .site-list__link--custom-knitting {
+    padding-left: 42px;
+  }
+
+  .site-list__item svg {
+    margin-right: 20px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -63,10 +82,10 @@
     }
   }
 
-  .site-list__catalog,
-  .site-list__custom-knitting,
-  .site-list__new-arrivals,
-  .site-list__sale {
+  .site-list__link--catalog,
+  .site-list__link--custom-knitting,
+  .site-list__link--new-arrivals,
+  .site-list__link--sale {
     font-size: 17px;
     line-height: 1.41;
   }
