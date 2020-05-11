@@ -1,19 +1,5 @@
-.site-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.site-list__item {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  &:nth-last-child(-n+2) {
-    display: none;
-  }
-}
-
 .site-list__link {
+  display: block;
   font-weight: bold;
   font-size: 17px;
   line-height: 1.41;
@@ -21,72 +7,62 @@
   text-decoration: none;
 }
 
-.site-list__link svg {
-  fill: #ececec;
-}
-
-.site-list__link--search svg {
-  width: 18px;
-  height: 18px;
-}
-
-.site-list__link--cart svg {
-  width: 21px;
-  height: 18px;
-}
-
 @media (max-width: $mobile-width-only) {
   .site-list__item {
-    border-bottom: 1px solid #ececec;
-
     &:first-child {
       border-top: 1px solid #ececec;
     }
   }
 
-  .site-list__link--catalog,
-  .site-list__link--custom-knitting {
+  .site-list__link {
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 42px;
-  }
-
-  .site-list__item svg {
-    margin-right: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-  }
-
-  .site-list__item {
-    padding-top: 0;
-    padding-bottom: 0;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    max-width: 350px;
   }
 
   .site-list__link {
-    font-size: 15px;
-    line-height: 1.6;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .site-list__cart {
-    font-size: 17px;
-    line-height: 1.41;
+  .site-list__item {
+    &:nth-child(2n+1) .site-list__link {
+      padding-left: 0;
+    }
+
+    &:nth-child(2n) .site-list__link {
+      padding-right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item {
-    &:nth-last-child(-n+2) {
-      display: block;
-    }
+  .site-list {
+    max-width: 410px;
+    width: 100%;
+    order: -3;
   }
 
-  .site-list__link--catalog,
-  .site-list__link--custom-knitting,
-  .site-list__link--new-arrivals,
-  .site-list__link--sale {
-    font-size: 17px;
-    line-height: 1.41;
+  .site-list__link {
+    padding-top: 29px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .site-list__item--custom-knitting {
+    box-shadow: -1px 0 0 0 #e9e9e9;
   }
 }
