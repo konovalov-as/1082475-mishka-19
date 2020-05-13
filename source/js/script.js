@@ -1,7 +1,13 @@
 var mapStatic = document.querySelector(".contacts__box-map--static");
 var mapInteractive = document.querySelector(".contacts__box-map--interactive");
+
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-menu-toggle");
+
+var popupCart = document.querySelector(".popup");
+var productWeekOrder = document.querySelector(".product-week__order");
+
+var productAddToCart = document.querySelectorAll(".card-product__add-to-cart");
 
 if (mapStatic) {
   mapStatic.classList.add("visually-hidden");
@@ -25,4 +31,34 @@ if (navToggle) {
       navMain.classList.remove("main-nav--opened");
     }
   });
+}
+
+if (productWeekOrder) {
+  productWeekOrder.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupCart.classList.add("popup--show");
+  });
+}
+
+document.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    popupCart.classList.remove("popup--show");
+  }
+});
+
+// if (popupCart) {
+//   popupCart.addEventListener("click", function(evt) {
+//     evt.preventDefault();
+//     popupCart.classList.remove("popup--show");
+//     popupCartWrap.classList.remove("popup__wrapper--show");
+//   })
+// }
+
+if (productAddToCart) {
+  for (var i = 0; i < productAddToCart.length; i++) {
+    productAddToCart[i].addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popupCart.classList.add("popup--show");
+    });
+  }
 }
