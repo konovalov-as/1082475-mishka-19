@@ -114,10 +114,17 @@
             </table>
             <div class="product-week__box-image">
               <picture>
-                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)"
+                  srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg">
+                <source media="(min-width: 768px)"
+                  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg">
                 <img class="product-week__image" src="img/triple-set-mobile@1x.jpg"
-                  alt="Фото вязаных корзинок трех размеров">
+                  srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото вязаных корзинок трех размеров">
               </picture>
             </div>
             <span class="product-week__price">Цена: 990 руб.</span>
@@ -190,9 +197,14 @@
       <div class="contacts__picture-map">
         <div class="visually-hidden contacts__box-map contacts__box-map--center">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg"
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
               alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
           </picture>
         </div>
