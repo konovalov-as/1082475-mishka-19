@@ -7,8 +7,9 @@
     width: auto;
     height: 6px;
     background-image: url("../../img/bg-zigzag-line.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 320px;
   }
 }
 
@@ -86,7 +87,7 @@
     &::after {
       display: block;
       height: 15px;
-      background-size: cover;
+      background-size: 745px;
       transform: translateY(100px);
     }
 
@@ -160,6 +161,7 @@
   .reviews {
     &::after {
       height: 23px;
+      background-size: 1010px;
       margin-left: 50px;
       margin-right: 50px;
     }
