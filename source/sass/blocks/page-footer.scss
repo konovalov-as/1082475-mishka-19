@@ -8,6 +8,17 @@
   text-align: center;
 }
 
+.page-footer__logo-link {
+  &:hover .page-footer__logo-image,
+  &:focus .page-footer__logo-image {
+    fill: #46c1ae;
+  }
+
+  &:active .page-footer__logo-image {
+    fill: rgba(70, 193, 174, 0.3);
+  }
+}
+
 .page-footer__logo-image {
   display: block;
   width: 102px;
@@ -27,12 +38,6 @@
     margin-top: 25px;
     margin-bottom: 20px;
   }
-}
-
-.page-footer__copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (max-width: $mobile-width-only) {

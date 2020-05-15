@@ -165,19 +165,22 @@
               <li class="list-full-name__item">
                 <label class="field-text">
                   <span class="field-text__label">Имя:</span>
-                  <input class="field-text__input" name="name" type="text" placeholder="Введите ваше имя*">
+                  <input class="field-text__input field-text__input--bb" name="name" type="text"
+                    placeholder="Введите ваше имя*">
                 </label>
               </li>
               <li class="list-full-name__item">
                 <label class="field-text">
                   <span class="field-text__label">Фамилия:</span>
-                  <input class="field-text__input" name="surname" type="text" placeholder="Укажите фамилию*">
+                  <input class="field-text__input field-text__input--bb" name="surname" type="text"
+                    placeholder="Укажите фамилию*">
                 </label>
               </li>
               <li class="list-full-name__item">
                 <label class="field-text">
                   <span class="field-text__label">Отчество:</span>
-                  <input class="field-text__input" name="middle-name" type="text" placeholder="Отчество, если желаете">
+                  <input class="field-text__input field-text__input--bb" name="middle-name" type="text"
+                    placeholder="Отчество, если желаете">
                 </label>
               </li>
             </ul>
@@ -189,8 +192,8 @@
                 <li class="list-phone__item">
                   <label class="field-text field-text--phone">
                     <span class="visually-hidden">Телефон:*</span>
-                    <input class="field-text__input field-text__input--phone" name="phone" type="tel"
-                      placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                    <input class="field-text__input field-text__input--phone field-text__input--bb" name="phone"
+                      type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                     <svg class="field-text__svg field-text__svg--phone" width="24.829" height="24.333">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
@@ -204,8 +207,8 @@
                 <li class="list-email__item">
                   <label class="field-text field-text--email">
                     <span class="visually-hidden">E-mail:*</span>
-                    <input class="field-text__input field-text__input--email" name="email" type="email"
-                      placeholder="Ваш Email*">
+                    <input class="field-text__input field-text__input--email field-text__input--bb" name="email"
+                      type="email" placeholder="Ваш Email*">
                     <svg class="field-text__svg field-text__svg--email" width="32" height="21">
                       <use xlink:href="img/sprite.svg#icon-mail"></use>
                     </svg>
@@ -234,8 +237,9 @@
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo-link" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34"
-              alt="Интернет-магазин «Мишка»">
+            <svg class="page-footer__logo-image" width="102" height="34">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
@@ -266,8 +270,8 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__text">Разработано</p>
               <span class="visually-hidden">HTML Academy</span>
               <svg width="27" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>

@@ -224,6 +224,9 @@
               <img class="production__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
                 alt="О том как появляются наши товары">
             </picture>
+            <button class="production__play-button" type="button">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
           </div>
           <div class="production__inner">
             <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
@@ -239,8 +242,9 @@
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo-link" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34"
-              alt="Интернет-магазин «Мишка»">
+            <svg class="page-footer__logo-image" width="102" height="34">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
@@ -271,8 +275,8 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__text">Разработано</p>
               <span class="visually-hidden">HTML Academy</span>
               <svg width="27" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>

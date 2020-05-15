@@ -20,12 +20,6 @@
   border-radius: 50%;
 }
 
-// .field-radio__input ~ .field-radio__label {
-//   &:active {
-//     color: rgba(34, 34, 34, 0.3);
-//   }
-// }
-
 // checked
 .field-radio__input:checked + .field-radio__indicator::before {
   content: "";
@@ -50,19 +44,18 @@
 }
 
 // hover
-// .field-radio__input:hover + .field-radio__indicator {
-//   // opacity: 0.6;
-//   border-color: #bababa;
-// }
+.field-radio__input:hover + .field-radio__indicator {
+  border-color: #62d1ba;
+}
 
 // active
-// .field-radio__input:active + .field-radio__indicator {
-//   opacity: 0.3;
-// }
+.field-radio__input:active + .field-radio__indicator {
+  border-color: rgba(68, 68, 68, 0.3);
+}
 
 // outline
 .field-radio__input:focus + .field-radio__indicator {
-  box-shadow: 0 0 0 4px #4a90e2;
+  box-shadow: 0 0 0 4px #42a5f5;
   border-radius: 50%;
 }
 
@@ -75,8 +68,6 @@
   }
 
   .field-radio__input + .field-radio__indicator {
-    // top: -10px;
-    // left: 0;
     width: 52px;
     height: 53px;
   }

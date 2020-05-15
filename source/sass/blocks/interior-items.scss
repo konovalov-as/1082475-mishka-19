@@ -25,11 +25,24 @@
 .interior-items__link--interior {
   background-color: $color-green-1;
   padding-right: 60px;
+  position: relative;
 
   &::after {
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 0 #59d5bc;
+    background-color: #59d5bc;
+    top: -5px;
+  }
+
+  &:active {
+    background-color: #59d5bc;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -42,6 +55,22 @@
     height: 60px;
     background-image: url("../img/icon-toy.svg");
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 0 #46c1ae;
+    background-color: #46c1ae;
+    top: -5px;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.interior-items__link-span {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

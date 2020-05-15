@@ -34,13 +34,25 @@
   padding-right: 25px;
 }
 
-.contacts__field--email {
+.contacts__email {
+  text-decoration: none;
+  color: $color-grey-1;
+
   &::after {
     content: "";
     display: block;
     width: auto;
     height: 1px;
     background-color: #71d6c1;
+  }
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

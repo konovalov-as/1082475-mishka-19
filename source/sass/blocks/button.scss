@@ -11,6 +11,17 @@
   padding-bottom: 12px;
   padding-left: 10px;
   padding-right: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-grey-1;
+    color: $color-white-1;
+  }
+
+  &:active {
+    background-color: $color-grey-1;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--hl16 {

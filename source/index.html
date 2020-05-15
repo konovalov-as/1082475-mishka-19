@@ -85,10 +85,11 @@
         <div class="interior-items">
           <div class="interior-items__link-block">
             <a class="interior-items__link interior-items__link--interior" href="interior-items.html">Предметы
-              интерьера</a>
+              <span class="interior-items__link-span">интерьера</span></a>
           </div>
           <div class="interior-items__link-block">
-            <a class="interior-items__link interior-items__link--toy" href="kids-toys.html">Детские игрушки</a>
+            <a class="interior-items__link interior-items__link--toy" href="kids-toys.html">Детские
+              <span class="interior-items__link-span">игрушки</span></a>
           </div>
         </div>
       </div>
@@ -191,7 +192,9 @@
           <table class="contacts__block">
             <tr class="contacts__row">
               <td class="contacts__value">e-mail:</td>
-              <td class="contacts__field contacts__field--email">info@mimimishkashop.ru</td>
+              <td class="contacts__field contacts__field--email">
+                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
             </tr>
             <tr class="contacts__row">
               <td class="contacts__value">адрес:</td>
@@ -225,8 +228,9 @@
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo-link">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34"
-              alt="Интернет-магазин «Мишка»">
+            <svg class="page-footer__logo-image" width="102" height="34">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
@@ -257,8 +261,8 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__text">Разработано</p>
               <span class="visually-hidden">HTML Academy</span>
               <svg width="27" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
