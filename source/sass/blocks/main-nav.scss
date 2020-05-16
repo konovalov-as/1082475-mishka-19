@@ -22,12 +22,6 @@
   }
 }
 
-.main-nav__logo-image {
-  display: block;
-  width: 86px;
-  height: 35px;
-}
-
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -78,31 +72,23 @@
     align-items: center;
   }
 
-  .main-nav__logo-link {
+  .main-nav__logo-block {
+    width: 112px;  
+    height: 46px;  
     align-self: flex-start;
-    width: 40%;
     order: -2;
-    padding-top: 18px;
-    padding-bottom: 19px;
-  }
-
-  .main-nav__logo-image {
-    width: 112px;
-    height: 46px;
-    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 19px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__logo-link {
-    max-width: 220px;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .main-nav__logo-image {
-    width: 149px;
-    height: 72px;
+  .main-nav__logo-block {
+    width: 149px;  
+    height: 72px;  
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

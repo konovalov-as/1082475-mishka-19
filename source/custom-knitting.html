@@ -56,7 +56,7 @@
         </button>
         <div class="main-nav__wrapper">
           <div class="main-nav__logo-block">
-            <a class="main-nav__logo-link">
+            <a href="index.html" class="main-nav__logo-link">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -121,7 +121,7 @@
           уточнить детали.
         </p>
         <form class="custom-knitting__form form-order" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-order__fieldset form-order__fieldset--radio container">
+          <div class="form-order__fieldset form-order__fieldset--radio container">
             <div class="form-order__legend">Тип</div>
             <ul class="form-order__types list-types">
               <li class="list-types__item">
@@ -140,10 +140,10 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
           <div class="form-order__bg">
-            <fieldset class="form-order__fieldset container">
+            <div class="form-order__fieldset container">
               <div class="form-order__legend">Цвет</div>
               <ul class="form-order__colors list-colors">
                 <li class="list-colors__item">
@@ -189,10 +189,10 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
 
-          <fieldset class="form-order__fieldset form-order__fieldset--full-name container">
+          <div class="form-order__fieldset form-order__fieldset--full-name container">
             <div class="form-order__legend">ФИО</div>
             <ul class="form-order__name-list list-full-name">
               <li class="list-full-name__item">
@@ -217,9 +217,9 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <div class="form-order__bg">
-            <fieldset class="form-order__fieldset container">
+            <div class="form-order__fieldset container">
               <div class="form-order__legend">тел</div>
               <ul class="form-order__phones list-phone">
                 <li class="list-phone__item">
@@ -233,8 +233,8 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form-order__fieldset container">
+            </div>
+            <div class="form-order__fieldset container">
               <div class="form-order__legend">E-mail</div>
               <ul class="form-order__email list-email">
                 <li class="list-email__item">
@@ -248,16 +248,16 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form-order__fieldset form-order__fieldset--additionally container">
+          <div class="form-order__fieldset form-order__fieldset--additionally container">
             <div class="form-order__legend">Доп</div>
             <label class="field-text">
               <span class="visually-hidden">Ваши пожелания к заказу</span>
               <textarea class="field-text__input field-text__input--textarea" name="more-description" rows="5"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
-          </fieldset>
+          </div>
           <div class="custom-knitting__inner container">
             <small class="custom-knitting__required-fields">*Поля обязательны для заполнения</small>
             <button class="custom-knitting__send-order button" type="submit">Отправить заказ</button>

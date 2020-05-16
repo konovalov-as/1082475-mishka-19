@@ -109,6 +109,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
+    max-width: 440px;
     width: auto;
   }
 }
