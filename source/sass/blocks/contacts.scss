@@ -2,12 +2,16 @@
   margin-bottom: 40px;
 }
 
+.contacts__wrapper {
+  margin-bottom: 7px;
+}
+
 .contacts__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.67;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .contacts__block {
@@ -26,6 +30,10 @@
   border: none;
   padding: 0;
   padding-bottom: 30px;
+}
+
+.contacts__row:nth-child(2) .contacts__field {
+  padding-right: 24px;
 }
 
 .contacts__value {
@@ -60,7 +68,7 @@
   width: auto;
   height: 457px;
   background-color: #f4ead8;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 
 .contacts__box-map--center {

@@ -1,10 +1,10 @@
 .advantages__wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .advantages__list {
@@ -18,7 +18,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   &::before {
     content: "";
@@ -40,46 +40,59 @@
     width: 32px;
     height: 37px;
     background-image: url("../img/icon-feature-flower.svg");
+    margin-bottom: 18px;
+    margin-left: 8px;
   }
 }
 
 .advantages__item--money {
   max-width: 201px;
+  margin-bottom: 35px;
 
   &::before {
     width: 47px;
     height: 27px;
     background-image: url("../img/icon-feature-money.svg");
+    margin-bottom: 26px;
   }
 }
 
 .advantages__item--heart {
   max-width: 182px;
+  margin-bottom: 31px;
 
   &::before {
     width: 34px;
     height: 27px;
     background-image: url("../img/icon-feature-heart.svg");
+    margin-bottom: 21px;
+    margin-left: 6px;
   }
 }
 
 .advantages__item--ball {
   max-width: 212px;
+  margin-bottom: 33px;
 
   &::before {
     width: 35px;
     height: 34px;
     background-image: url("../img/icon-feature-ball.svg");
+    margin-bottom: 18px;
+    margin-left: 2px;
   }
 }
 
 .advantages__item--rocket {
   max-width: 250px;
+  margin-bottom: 32px;
 
   &::before {
     width: 55px;
     height: 23px;
     background-image: url("../img/icon-feature-rocket.svg");
+    margin-bottom: 26px;
+    margin-left: -7px;
   }
 }
 
@@ -90,6 +103,7 @@
     width: 33px;
     height: 32px;
     background-image: url("../img/icon-feature-gift.svg");
+    margin-left: 2px;
   }
 }
 

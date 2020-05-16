@@ -1,10 +1,6 @@
 .main-nav__logo-block {
-  width: 86px;  
-  height: 35px;  
-  margin-top: 11px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 86px;
+  height: 35px;
 }
 
 .main-nav__logo-link {
@@ -59,8 +55,15 @@
     position: relative;
   }
 
+  .main-nav__logo-block {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
   .main-nav__item {
-    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
   }
 }
 
@@ -73,8 +76,8 @@
   }
 
   .main-nav__logo-block {
-    width: 112px;  
-    height: 46px;  
+    width: 112px;
+    height: 46px;
     align-self: flex-start;
     order: -2;
     margin-top: 18px;
@@ -86,8 +89,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo-block {
-    width: 149px;  
-    height: 72px;  
+    width: 149px;
+    height: 72px;
     margin-top: 5px;
     margin-bottom: 5px;
   }

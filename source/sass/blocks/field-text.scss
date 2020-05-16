@@ -1,6 +1,6 @@
 .field-text {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-weight: bold;
   font-size: 17px;
   line-height: 1.06;
@@ -11,32 +11,15 @@
   margin-bottom: 10px;
 }
 
-.field-text--phone,
-.field-text--email {
-  position: relative;
-}
-
-.field-text--phone svg,
-.field-text--email svg {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-.field-text--phone .field-text__input,
-.field-text--email .field-text__input {
-  padding-right: 45px;
-}
-
 .field-text__input {
   width: 100%;
   font-size: 17px;
   line-height: 1.06;
   color: rgba(68, 68, 68, 0.3);
-  padding: 0;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 6px;
+  padding-bottom: 15px;
   border: none;
 }
 
@@ -51,6 +34,38 @@
   &:active {
     color: $color-grey-1;
   }
+}
+
+.field-text__svg {
+  fill: #cccccc;
+}
+
+.field-text__svg--phone {
+  width: 25px;
+  height: 24px;
+}
+
+.field-text__svg--email {
+  width: 32px;
+  height: 21px;
+}
+
+.field-text--phone,
+.field-text--email {
+  position: relative;
+}
+
+.field-text__svg--phone,
+.field-text__svg--email {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.field-text--phone .field-text__input,
+.field-text--email .field-text__input {
+  padding-right: 45px;
 }
 
 .field-text__input--phone {
@@ -77,25 +92,13 @@
   }
 }
 
-.field-text__svg {
-  fill: #cccccc;
-}
-
-.field-text__svg--phone {
-  width: 25px;
-  height: 24px;
-}
-
-.field-text__svg--email {
-  width: 32px;
-  height: 21px;
-}
-
 .field-text__input--textarea {
   resize: none;
-  min-height: 140px;
-  padding-left: 17px;
-  padding-right: 17px;
+  min-height: 142px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border: 2px solid #444444;
 
   &:hover,
@@ -107,6 +110,10 @@
     color: $color-grey-1;
     border-color: #62d1ba;
   }
+}
+
+.field-text--textarea {
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {

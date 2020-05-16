@@ -19,7 +19,7 @@
   <style>
     HTML {
       background-repeat: no-repeat;
-      background-position: 50% 0;
+      background-position: 50% -316px;
       /* Mobile layout by default */
       background-image: url("img/mishka-form-mobile.png");
     }
@@ -144,7 +144,7 @@
 
           <div class="form-order__bg">
             <div class="form-order__fieldset container">
-              <div class="form-order__legend">Цвет</div>
+              <div class="form-order__legend form-order__legend--checkbox">Цвет</div>
               <ul class="form-order__colors list-colors">
                 <li class="list-colors__item">
                   <label class="field-checkbox">
@@ -193,7 +193,7 @@
           </div>
 
           <div class="form-order__fieldset form-order__fieldset--full-name container">
-            <div class="form-order__legend">ФИО</div>
+            <div class="form-order__legend form-order__legend--full-name">ФИО</div>
             <ul class="form-order__name-list list-full-name">
               <li class="list-full-name__item">
                 <label class="field-text">
@@ -219,8 +219,8 @@
             </ul>
           </div>
           <div class="form-order__bg">
-            <div class="form-order__fieldset container">
-              <div class="form-order__legend">тел</div>
+            <div class="form-order__fieldset form-order__fieldset--phone container">
+              <div class="form-order__legend form-order__legend--phone">тел</div>
               <ul class="form-order__phones list-phone">
                 <li class="list-phone__item">
                   <label class="field-text field-text--phone">
@@ -234,8 +234,8 @@
                 </li>
               </ul>
             </div>
-            <div class="form-order__fieldset container">
-              <div class="form-order__legend">E-mail</div>
+            <div class="form-order__fieldset form-order__fieldset--email container">
+              <div class="form-order__legend form-order__legend--email">E-mail</div>
               <ul class="form-order__email list-email">
                 <li class="list-email__item">
                   <label class="field-text field-text--email">
@@ -251,8 +251,8 @@
             </div>
           </div>
           <div class="form-order__fieldset form-order__fieldset--additionally container">
-            <div class="form-order__legend">Доп</div>
-            <label class="field-text">
+            <div class="form-order__legend form-order__legend--additionally">Доп</div>
+            <label class="field-text field-text--textarea">
               <span class="visually-hidden">Ваши пожелания к заказу</span>
               <textarea class="field-text__input field-text__input--textarea" name="more-description" rows="5"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>

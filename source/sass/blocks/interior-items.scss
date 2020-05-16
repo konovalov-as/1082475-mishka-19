@@ -1,3 +1,7 @@
+.interior-items {
+  margin-top: -91px;
+}
+
 .interior-items__link {
   display: block;
   width: auto;
@@ -7,16 +11,14 @@
   line-height: 1.26;
   color: $color-white-1;
   text-decoration: none;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 28px;
 
   &::after {
     content: "";
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -24,12 +26,14 @@
 
 .interior-items__link--interior {
   background-color: $color-green-1;
-  padding-right: 60px;
+  padding-right: 90px;
   position: relative;
 
   &::after {
     width: 40px;
     height: 62px;
+    top: 23px;
+    right: 36px;
     background-image: url("../img/icon-interior.svg");
   }
 
@@ -48,11 +52,13 @@
 
 .interior-items__link--toy {
   background-color: $color-green-2;
-  padding-right: 80px;
+  padding-right: 100px;
 
   &::after {
     width: 60px;
     height: 60px;
+    top: 21px;
+    right: 27px;
     background-image: url("../img/icon-toy.svg");
   }
 

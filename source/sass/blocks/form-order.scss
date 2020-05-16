@@ -1,7 +1,24 @@
 .form-order__fieldset {
+  margin-bottom: 45px;
   padding-top: 0;
   padding-bottom: 0;
   border: none;
+}
+
+.form-order__fieldset--full-name {
+  margin-bottom: 32px;
+}
+
+.form-order__fieldset--phone {
+  margin-bottom: 32px;
+}
+
+.form-order__fieldset--email {
+  margin-bottom: 32px;
+}
+
+.form-order__fieldset--additionally {
+  margin-bottom: 15px;
 }
 
 .form-order__legend {
@@ -13,14 +30,34 @@
   line-height: 0.94;
   color: $color-green-1;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 
   &::after {
     content: "";
-    width: 198px;
+    width: 70%;
     height: 1px;
     background-color: $color-green-1;
   }
+}
+
+.form-order__legend--checkbox {
+  margin-bottom: 35px;
+}
+
+.form-order__legend--full-name {
+  margin-bottom: 27px;
+}
+
+.form-order__legend--phone {
+  margin-bottom: 18px;
+}
+
+.form-order__legend--email {
+  margin-bottom: 18px;
+}
+
+.form-order__legend--additionally {
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {

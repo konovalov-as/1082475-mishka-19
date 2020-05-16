@@ -1,5 +1,5 @@
 .custom-knitting__wrapper {
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
 .custom-knitting__description {
@@ -7,7 +7,7 @@
   line-height: 1.85;
   color: $color-grey-1;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .custom-knitting__inner {
@@ -16,7 +16,7 @@
 
 .custom-knitting__required-fields {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 1.14;
   color: $color-grey-1;
@@ -26,7 +26,10 @@
   line-height: 0.94;
   background-color: transparent;
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
