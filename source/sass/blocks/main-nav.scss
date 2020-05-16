@@ -1,7 +1,14 @@
+.main-nav__logo-block {
+  width: 86px;  
+  height: 35px;  
+  margin-top: 11px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-nav__logo-link {
   display: block;
-  padding-top: 11px;
-  padding-bottom: 15px;
   color: $base-color;
   text-decoration: none;
 
@@ -19,7 +26,6 @@
   display: block;
   width: 86px;
   height: 35px;
-  margin: 0 auto;
 }
 
 .main-nav__list {
