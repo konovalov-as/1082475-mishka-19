@@ -1,6 +1,8 @@
 .main-nav__logo-block {
   width: 86px;
   height: 35px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .main-nav__logo-link {
@@ -58,8 +60,6 @@
   .main-nav__logo-block {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 22px;
-    margin-bottom: 22px;
   }
 
   .main-nav__item {
@@ -80,8 +80,6 @@
     height: 46px;
     align-self: flex-start;
     order: -2;
-    margin-top: 18px;
-    margin-bottom: 19px;
     margin-left: 0;
     margin-right: 0;
   }

@@ -63,13 +63,14 @@
   .field-radio {
     font-size: 19px;
     line-height: 0.95;
-    margin-bottom: 50px;
-    padding-left: 90px;
+    margin-bottom: 58px;
+    padding-left: 80px;
   }
 
   .field-radio__input + .field-radio__indicator {
     width: 52px;
     height: 53px;
+    top: -15px;
   }
 
   // checked

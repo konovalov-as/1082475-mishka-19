@@ -99,16 +99,29 @@
   .production__wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
   }
 
   .production__title {
     order: 2;
     justify-content: flex-start;
+    margin-top: 36px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+
+    &::before {
+      padding-right: 66px;
+    }
   }
 
   .production__picture {
     width: 668px;
     height: 455px;
+  }
+
+  .production__play-button {
+    top: 188px;
+    left: 283px;
   }
 
   .production__image {
@@ -118,11 +131,16 @@
 
   .production__inner {
     order: 3;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 45px;
   }
 
   .production__description {
     font-size: 15px;
     line-height: 2;
+    max-width: 100%;
+    margin-bottom: 36px;
   }
 }
 

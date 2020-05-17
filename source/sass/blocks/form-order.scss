@@ -63,37 +63,64 @@
 @media (min-width: $tablet-width) {
   .form-order__bg {
     background-color: #f1f1f1;
-    padding-top: 50px;
+    padding-top: 65px;
     padding-bottom: 10px;
+  }
+
+  .form-order__bg--contacts {
+    padding-top: 60px;
+    padding-bottom: 17px;
   }
 
   .form-order__fieldset {
     display: flex;
   }
 
+  .form-order__fieldset--checkbox {
+    margin-bottom: 0;
+  }
+
   .form-order__fieldset--radio {
-    margin-bottom: 30px;
+    margin-bottom: 11px;
   }
 
   .form-order__fieldset--full-name {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+
+  .form-order__fieldset--phone {
+    margin-bottom: 0;
+  }
+
+  .form-order__fieldset--email {
+    margin-bottom: 0;
   }
 
   .form-order__fieldset--additionally {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 19px;
   }
 
   .form-order__legend {
-    max-width: 150px;
+    max-width: 167px;
     width: 100%;
     align-self: flex-start;
     margin-bottom: 0;
+    margin-top: 7px;
 
     &::after {
       content: none;
     }
+  }
+
+  .form-order__legend--checkbox,
+  .form-order__legend--radio {
+    margin-top: 3px;
+  }
+
+  .form-order__legend--additionally {
+    margin-top: 16px;
   }
 }
 

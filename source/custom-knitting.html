@@ -19,7 +19,7 @@
   <style>
     HTML {
       background-repeat: no-repeat;
-      background-position: 50% -316px;
+      background-position: 50% 0px;
       /* Mobile layout by default */
       background-image: url("img/mishka-form-mobile.png");
     }
@@ -122,7 +122,7 @@
         </p>
         <form class="custom-knitting__form form-order" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-order__fieldset form-order__fieldset--radio container">
-            <div class="form-order__legend">Тип</div>
+            <div class="form-order__legend form-order__legend--radio">Тип</div>
             <ul class="form-order__types list-types">
               <li class="list-types__item">
                 <label class="field-radio">
@@ -143,7 +143,7 @@
           </div>
 
           <div class="form-order__bg">
-            <div class="form-order__fieldset container">
+            <div class="form-order__fieldset form-order__fieldset--checkbox container">
               <div class="form-order__legend form-order__legend--checkbox">Цвет</div>
               <ul class="form-order__colors list-colors">
                 <li class="list-colors__item">
@@ -218,7 +218,7 @@
               </li>
             </ul>
           </div>
-          <div class="form-order__bg">
+          <div class="form-order__bg form-order__bg--contacts">
             <div class="form-order__fieldset form-order__fieldset--phone container">
               <div class="form-order__legend form-order__legend--phone">тел</div>
               <ul class="form-order__phones list-phone">

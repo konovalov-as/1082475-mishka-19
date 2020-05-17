@@ -40,6 +40,7 @@
 }
 
 .reviews__author-nickname {
+  font-weight: normal;
   font-size: 17px;
   line-height: 1.76;
   color: $color-grey-1;
@@ -91,13 +92,13 @@
     min-height: 457px;
     position: relative;
     padding-bottom: 30px;
-    margin-bottom: 110px;
+    margin-bottom: 146px;
 
     &::after {
       display: block;
       height: 15px;
       background-size: 745px;
-      transform: translateY(100px);
+      transform: translateY(117px);
     }
 
     &::before {
@@ -105,7 +106,7 @@
       position: absolute;
       top: 0;
       z-index: -10;
-      width: 350px;
+      width: 355px;
       height: 100%;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
@@ -116,17 +117,17 @@
 
   .reviews__wrapper {
     position: relative;
-    padding-top: 80px;
+    padding-top: 77px;
   }
 
   .reviews__title {
-    margin-bottom: 60px;
+    margin-bottom: 49px;
   }
 
   .reviews__text {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 65px;
+    margin-bottom: 59px;
   }
 
   .reviews__author-name {
@@ -144,8 +145,8 @@
 
   .reviews__btn-block {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 13px;
+    right: 20px;
     margin-bottom: 0;
   }
 
@@ -162,7 +163,9 @@
   .reviews__write {
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 0;
+    max-width: 175px;
+    width: 100%;
   }
 }
 

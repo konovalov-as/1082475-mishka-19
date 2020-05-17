@@ -8,6 +8,12 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .list-goods__item {
+    margin-bottom: 54px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .list-goods {
     display: flex;
@@ -17,6 +23,7 @@
 
   .list-goods__item {
     margin-right: 51px;
+    margin-bottom: 54px;
 
     &:last-child {
       margin-right: 0;

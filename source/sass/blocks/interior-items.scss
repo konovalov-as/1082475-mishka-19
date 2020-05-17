@@ -82,8 +82,9 @@
 @media (min-width: $tablet-width) {
   .interior-items {
     display: flex;
-    margin-left: 52px;
-    margin-right: 52px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -179px;
   }
 
   .interior-items__link-block {
@@ -93,21 +94,21 @@
   .interior-items__link {
     font-size: 20px;
     line-height: 1.5;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
+    padding-top: 27px;
+    padding-bottom: 43px;
+    padding-left: 36px;
 
     &::after {
-      top: 25px;
-      right: 20px;
+      top: 30px;
+      right: 35px;
     }
   }
 
   .interior-items__link--interior {
-    padding-right: 70px;
+    padding-right: 80px;
   }
 
   .interior-items__link--toy {
-    padding-right: 90px;
+    padding-right: 100px;
   }
 }

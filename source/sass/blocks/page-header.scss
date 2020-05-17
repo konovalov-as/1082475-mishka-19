@@ -8,18 +8,18 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    border-bottom: none;
-    background-image: linear-gradient(to bottom, #ffffff 83px, #e1e1e1 83px, #e1e1e1 84px, #f1f1f1 84px);
+    background-image: linear-gradient(to bottom, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f1f1f1 89px);
   }
 
   .page-header__wrapper {
     max-width: $tablet-width;
     padding-left: 50px;
     padding-right: 50px;
+    border-bottom: none;
   }
 
   .page-header--index {
-    background-image: linear-gradient(to bottom, #ffffff 83px, #e9e9e9 83px, #e9e9e9 84px, #f9f9f9 84px);
+    background-image: linear-gradient(to bottom, #ffffff 88px, #e9e9e9 88px, #e9e9e9 89px, #f9f9f9 89px);
   }
 }
 

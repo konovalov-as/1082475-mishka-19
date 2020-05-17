@@ -11,6 +11,8 @@
 @media (min-width: $tablet-width) {
   .page-main__block {
     flex-direction: column;
+    min-height: 177px;
+    margin-bottom: 37px;
 
     &::after {
       content: "";
@@ -18,10 +20,14 @@
       height: 24px;
       width: 100%;
       background-image: url("../../img/bg-zigzag-fill.svg");
-      background-position: center;
+      background-position: bottom;
       background-repeat: repeat-x;
       background-size: contain;
     }
+  }
+
+  .page-main__title {
+    margin-top: 36px;
   }
 }
 

@@ -26,7 +26,6 @@
   line-height: 0.94;
   background-color: transparent;
   display: block;
-  // margin: 0 auto;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 17px;
@@ -34,18 +33,20 @@
 
 @media (min-width: $tablet-width) {
   .custom-knitting__wrapper {
-    padding-top: 60px;
+    padding-top: 24px;
   }
 
   .custom-knitting__description {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 50px;
+    margin-bottom: 72px;
   }
 
   .custom-knitting__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 51px;
   }
 
   .custom-knitting__required-fields {
@@ -58,6 +59,7 @@
   .custom-knitting__send-order {
     order: -1;
     margin: 0;
+    max-width: 230px;
   }
 }
 

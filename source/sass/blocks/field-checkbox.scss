@@ -138,11 +138,14 @@
   .field-checkbox {
     font-size: 19px;
     line-height: 0.95;
+    margin-bottom: 58px;
+    padding-left: 80px;
   }
 
   .field-checkbox__input + .field-checkbox__indicator {
     width: 54px;
     height: 52px;
+    top: -15px;
   }
 
   .field-checkbox__input:checked + .field-checkbox__indicator::before {

@@ -100,6 +100,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .card-product {
+    &:nth-child(3) .card-product__title {
+      max-width: 240px;
+    }
+  }
+
   .card-product__wrapper {
     display: flex;
   }

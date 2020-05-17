@@ -33,3 +33,9 @@
   height: 34px;
   fill: #63d1bb;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    transform: translateY(-5px);
+  }
+}

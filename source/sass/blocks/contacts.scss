@@ -81,7 +81,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .contacts__title {
@@ -89,6 +89,7 @@
     justify-content: space-between;
     font-size: 43px;
     line-height: 1.16;
+    margin-bottom: 32px;
 
     &::after {
       content: "";
@@ -97,13 +98,14 @@
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: center;
+      margin-top: -14px;
     }
   }
 
   .contacts__block {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 50px;
+    margin-bottom: 27px;
   }
 
   .contacts__block tbody {
@@ -117,6 +119,14 @@
     &:first-child {
       margin-right: 50px;
     }
+
+    &:nth-child(2) {
+      width: 305px;
+    }
+  }
+
+  .contacts__row:nth-child(2) .contacts__field {
+    padding-right: 0;
   }
 
   .contacts__box-map {

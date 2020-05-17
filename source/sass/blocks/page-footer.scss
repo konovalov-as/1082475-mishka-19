@@ -55,7 +55,11 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+  }
+
+  .page-footer__logo-link {
+    margin-right: 76px;
   }
 
   .page-footer__social {
