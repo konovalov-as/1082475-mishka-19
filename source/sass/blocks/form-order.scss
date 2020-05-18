@@ -126,6 +126,19 @@
 
 @media (min-width: $desktop-width) {
   .form-order__legend {
-    text-align: center;
+    justify-content: center;
+    max-width: 165px;
+  }
+
+  .form-order__legend--phone {
+    transform: translateX(-4px);
+  }
+
+  .form-order__legend--email {
+    transform: translateX(7px);
+  }
+
+  .form-order__fieldset--additionally {
+    margin-bottom: 14px;
   }
 }

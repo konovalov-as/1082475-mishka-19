@@ -149,16 +149,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-bottom: 103px;
   }
 
   .production__title {
     display: block;
     max-width: 150px;
     align-self: flex-start;
+    margin-top: 46px;
     margin-left: 80px;
 
     &::before {
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
   }
 
@@ -173,16 +175,18 @@
   .production__inner {
     order: 3;
     margin-left: auto;
-    margin-top: -260px;
+    margin-top: -279px;
   }
 
   .production__description {
     width: 250px;
     margin-left: auto;
+    margin-bottom: 46px;
   }
 
   .production__make-order {
     align-self: flex-start;
-    width: 200px;
+    max-width: 230px;
+    margin-left: 3px;
   }
 }

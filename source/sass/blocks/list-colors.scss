@@ -20,3 +20,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .list-colors {
+    padding-left: 10px;
+  }
+
+  .list-colors__item {
+    margin-right: 32px;
+
+    &:nth-child(even) {
+      margin-right: 32px;
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}

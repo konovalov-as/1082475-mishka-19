@@ -143,25 +143,45 @@
   .contacts {
     display: flex;
     position: relative;
+    margin-bottom: 105px;
+  }
+
+  .contacts .container {
+    padding: 0;
+    width: 100%;
   }
 
   .contacts__wrapper {
-    margin-top: 80px;
-    margin-left: 100px;
+    margin-top: 70px;
+    margin-left: 220px;
+    margin-right: 28px;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 1.08;
+    position: relative;
+    margin-bottom: 48px;
 
     &::after {
       order: -1;
-      transform: translateX(-50px);
+      position: absolute;
+      top: 6px;
+      left: -107px;
     }
   }
 
   .contacts__block tbody {
     display: block;
+    max-width: 305px;
+  }
+
+  .contacts__field--email {
+    padding-right: 23px;
+  }
+
+  .contacts__picture-map {
+    margin-left: 21px;
   }
 
   .contacts__box-map {
@@ -173,5 +193,8 @@
     position: absolute;
     left: 150px;
     bottom: 0;
+    margin-left: 75px;
+    max-width: 230px;
+    width: 100%;
   }
 }

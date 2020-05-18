@@ -134,7 +134,7 @@
   .field-text__svg--phone,
   .field-text__svg--email {
     top: 16px;
-    right: 24px;
+    right: 6px;
   }
 
   .field-text__label {
@@ -150,7 +150,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field-text {
-    max-width: 700px;
+  .field-text--textarea {
+    max-width: 710px;
+    padding-left: 10px;
   }
 }

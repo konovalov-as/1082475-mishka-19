@@ -33,6 +33,9 @@
 
 @media (min-width: $desktop-width) {
   .page-main__block {
+    min-height: 212px;
+    margin-bottom: 104px;
+
     &::after {
       height: 34px;
     }

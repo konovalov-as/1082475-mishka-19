@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .list-types {
+    padding-left: 10px;
+  }
+}

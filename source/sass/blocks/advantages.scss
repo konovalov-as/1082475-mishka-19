@@ -180,10 +180,23 @@
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
-    margin-left: 150px;
+    margin-left: 170px;
+    margin-bottom: 34px;
+  }
+
+  .advantages__title {
+    margin-bottom: 47px;
+  }
+
+  .advantages__list {
+    margin-left: 3px;
   }
 
   .advantages__item {
     margin-right: 140px;
+  }
+
+  .advantages__item--money {
+    margin-right: 117px;
   }
 }

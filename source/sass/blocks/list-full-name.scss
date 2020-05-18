@@ -6,12 +6,13 @@
 
 @media (min-width: $tablet-width) {
   .list-full-name {
+    max-width: 710px;
     width: 100%;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .list-full-name {
-    max-width: 700px;
+    padding-left: 10px;
   }
 }

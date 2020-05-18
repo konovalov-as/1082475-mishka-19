@@ -112,4 +112,17 @@
     max-width: 440px;
     width: auto;
   }
+
+  .user-list__item--search-site .user-list__link {
+    padding-left: 34px;
+  }
+
+  .user-list__link {
+    padding-top: 31px;
+    padding-bottom: 33px;
+  }
+
+  .user-list__svg {
+    transform: translateY(5px);
+  }
 }

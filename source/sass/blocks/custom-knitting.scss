@@ -65,35 +65,24 @@
 
 @media (min-width: $desktop-width) {
   .custom-knitting__wrapper {
-    // padding-top: 60px;
+    padding-top: 0;
   }
 
   .custom-knitting__description {
     max-width: 750px;
     padding: 0;
+    padding-left: 25px;
     padding-right: 50px;
-    // font-size: 17px;
-    // line-height: 1.76;
-    // margin-bottom: 50px;
   }
 
   .custom-knitting__inner {
     max-width: 750px;
     padding-left: 0;
-    padding-right: 50px;
-    // display: flex;
-    // justify-content: space-between;
-  }
-
-  .custom-knitting__required-fields {
-    // margin-bottom: 0;
-    // font-size: 17px;
-    // line-height: 1.76;
-    // text-align: right;
+    padding-right: 23px;
+    margin-bottom: 49px;
   }
 
   .custom-knitting__send-order {
-    // order: -1;
-    // margin: 0;
+    margin-left: 25px;
   }
 }
