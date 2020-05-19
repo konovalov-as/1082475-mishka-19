@@ -179,8 +179,9 @@
 
     &::after {
       position: absolute;
-      bottom: 27px;
-      left: 51px;
+      bottom: -91px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 1050px;
       height: 23px;
       background-size: 1064px auto;
@@ -189,8 +190,8 @@
     }
 
     &::before {
-      left: 50px;
-      width: 350px;
+      left: 4.35%;
+      width: 30.43%;
     }
   }
 

@@ -146,6 +146,13 @@
     margin-bottom: 105px;
   }
 
+  .contacts__box {
+    position: relative;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    display: flex;
+  }
+
   .contacts .container {
     padding: 0;
     width: 100%;
@@ -153,7 +160,7 @@
 
   .contacts__wrapper {
     margin-top: 70px;
-    margin-left: 220px;
+    margin-left: 175px;
     margin-right: 28px;
   }
 
@@ -193,7 +200,7 @@
     position: absolute;
     left: 150px;
     bottom: 0;
-    margin-left: 75px;
+    margin-left: 27px;
     max-width: 230px;
     width: 100%;
   }
