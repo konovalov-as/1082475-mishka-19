@@ -25,13 +25,15 @@
     &::after {
       content: "";
       position: absolute;
+      left: 0;
+      right: 0;
       bottom: 0;
       width: 100%;
-      height: 25px;
+      height: 24px;
       background-image: url("../../img/bg-zigzag-fill.svg");
-      background-position: left 3px;
+      background-position: center top;
       background-repeat: repeat-x;
-      background-size: 768px;
+      background-size: 768px 26px;
     }
   }
 
@@ -56,9 +58,8 @@
 @media (min-width: $desktop-width) {
   .nice-things {
     &::after {
-      height: 34px;
-      width: 1150px;
-      background-position: 10px bottom;
+      height: 29px;
+      background-size: 1250px 37px;
     }
   }
 
