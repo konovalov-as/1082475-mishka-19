@@ -11,7 +11,7 @@
 @media (min-width: $tablet-width) {
   .page-main__block {
     flex-direction: column;
-    min-height: 177px;
+    height: 177px;
     margin-bottom: 37px;
 
     &::after {
@@ -35,6 +35,7 @@
   .page-main__block {
     min-height: 212px;
     margin-bottom: 104px;
+    height: 127px;
 
     &::after {
       height: 34px;
