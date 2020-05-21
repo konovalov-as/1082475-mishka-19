@@ -113,10 +113,11 @@
   }
 
   .contacts__row {
-    width: 280px;
+    display: block;
     margin-bottom: 0;
 
     &:first-child {
+      width: 280px;
       margin-right: 50px;
     }
 

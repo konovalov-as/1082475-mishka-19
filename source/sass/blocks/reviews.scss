@@ -179,8 +179,9 @@
 
     &::after {
       position: absolute;
-      left: 19%;
-      bottom: 26px;
+      left: 50%;
+      bottom: -91px;
+      transform: translateX(-50%);
       width: 1050px;
       height: 23px;
       background-size: 1064px auto;
