@@ -111,10 +111,15 @@
       z-index: -10;
       width: 355px;
       height: 100%;
+      background-color: #ededed;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 

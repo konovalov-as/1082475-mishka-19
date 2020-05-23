@@ -21,6 +21,15 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 

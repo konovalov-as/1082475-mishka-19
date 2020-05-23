@@ -27,10 +27,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 22px;
-  height: 77px;
+  height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 // disabled
@@ -150,6 +151,11 @@
 
   .field-checkbox__input:checked + .field-checkbox__indicator::before {
     width: 33px;
-    height: 22px;
+    height: 23px;
+  }
+
+  // checkbox popup
+  .field-checkbox--popup {
+    padding-left: 10px;
   }
 }
