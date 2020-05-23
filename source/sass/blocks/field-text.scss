@@ -1,6 +1,6 @@
 .field-text {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 17px;
   line-height: 1.06;
@@ -19,7 +19,7 @@
   padding-left: 0;
   padding-right: 0;
   padding-top: 6px;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   border: none;
 }
 
@@ -58,7 +58,7 @@
 .field-text__svg--phone,
 .field-text__svg--email {
   position: absolute;
-  top: 13px;
+  top: 15px;
   right: 5px;
   transform: translateY(-50%);
 }
@@ -69,6 +69,8 @@
 }
 
 .field-text__input--phone {
+  padding-top: 2px;
+
   &:hover + .field-text__svg--phone,
   &:focus + .field-text__svg--phone {
     fill: #62d1ba;
@@ -123,18 +125,19 @@
     width: 100%;
     font-size: 19px;
     line-height: 0.95;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   .field-text__input--phone,
   .field-text__input--email {
+    padding-bottom: 13px;
     background-color: transparent;
   }
 
   .field-text__svg--phone,
   .field-text__svg--email {
     top: 16px;
-    right: 6px;
+    right: 24px;
   }
 
   .field-text__label {
@@ -146,10 +149,25 @@
     line-height: 0.95;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .field-text {
+    margin-bottom: 30px;
+  }
+
+  .field-text__input {
+    padding-bottom: 12px;
+  }
+
+  .field-text__svg--phone,
+  .field-text__svg--email {
+    top: 16px;
+    right: 6px;
+  }
+
   .field-text--textarea {
     max-width: 710px;
     padding-left: 10px;

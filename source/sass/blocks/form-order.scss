@@ -1,12 +1,16 @@
 .form-order__fieldset {
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   padding-top: 0;
   padding-bottom: 0;
   border: none;
 }
 
+.form-order__fieldset--checkbox {
+  margin-bottom: 43px;
+}
+
 .form-order__fieldset--full-name {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .form-order__fieldset--phone {
@@ -14,7 +18,7 @@
 }
 
 .form-order__fieldset--email {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .form-order__fieldset--additionally {
@@ -34,7 +38,7 @@
 
   &::after {
     content: "";
-    width: 70%;
+    width: 77%;
     height: 1px;
     background-color: $color-green-1;
   }
@@ -45,7 +49,7 @@
 }
 
 .form-order__legend--full-name {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .form-order__legend--phone {
@@ -53,7 +57,11 @@
 }
 
 .form-order__legend--email {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
+
+  &::after {
+    width: 70%;
+  }
 }
 
 .form-order__legend--additionally {
@@ -64,12 +72,12 @@
   .form-order__bg {
     background-color: #f1f1f1;
     padding-top: 65px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
 
   .form-order__bg--contacts {
     padding-top: 60px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
   }
 
   .form-order__fieldset {
@@ -81,12 +89,12 @@
   }
 
   .form-order__fieldset--radio {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
 
   .form-order__fieldset--full-name {
-    margin-top: 60px;
-    margin-bottom: 16px;
+    margin-top: 55px;
+    margin-bottom: 18px;
   }
 
   .form-order__fieldset--phone {
@@ -99,7 +107,7 @@
 
   .form-order__fieldset--additionally {
     margin-top: 50px;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
   }
 
   .form-order__legend {
@@ -114,9 +122,18 @@
     }
   }
 
+  .form-order__legend--full-name {
+    margin-top: 13px;
+  }
+
   .form-order__legend--checkbox,
   .form-order__legend--radio {
     margin-top: 3px;
+  }
+
+  .form-order__legend--phone,
+  .form-order__legend--email {
+    margin-top: 8px;
   }
 
   .form-order__legend--additionally {
@@ -125,9 +142,33 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-order__bg--contacts {
+    padding-top: 59px;
+    padding-bottom: 21px;
+  }
+
+  .form-order__fieldset--full-name {
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
+
+  .form-order__fieldset--additionally {
+    margin-top: 50px;
+    margin-bottom: 19px;
+  }
+
   .form-order__legend {
     justify-content: center;
     max-width: 165px;
+  }
+
+  .form-order__fieldset--radio {
+    margin-bottom: 10px;
+  }
+
+  .form-order__legend--full-name {
+    margin-top: 12px;
+    margin-bottom: 27px;
   }
 
   .form-order__legend--phone {
@@ -135,10 +176,11 @@
   }
 
   .form-order__legend--email {
+    margin-top: 14px;
     transform: translateX(7px);
   }
 
-  .form-order__fieldset--additionally {
-    margin-bottom: 14px;
+  .form-order__legend--additionally {
+    margin-top: 17px;
   }
 }

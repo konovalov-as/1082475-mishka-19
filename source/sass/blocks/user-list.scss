@@ -52,12 +52,13 @@
 
 @media (max-width: $mobile-width-only) {
   .user-list__link {
-    padding-top: 27px;
+    padding-top: 26px;
     padding-bottom: 27px;
     padding-right: 20px;
   }
 
   .user-list__svg {
+    margin-top: 3px;
     margin-right: 20px;
   }
 }

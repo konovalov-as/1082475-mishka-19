@@ -46,14 +46,6 @@ document.addEventListener("keydown", function(evt) {
   }
 });
 
-// if (popupCart) {
-//   popupCart.addEventListener("click", function(evt) {
-//     evt.preventDefault();
-//     popupCart.classList.remove("popup--show");
-//     popupCartWrap.classList.remove("popup__wrapper--show");
-//   })
-// }
-
 if (productAddToCart) {
   for (var i = 0; i < productAddToCart.length; i++) {
     productAddToCart[i].addEventListener("click", function(evt) {

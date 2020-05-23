@@ -33,7 +33,7 @@
 }
 
 .contacts__row:nth-child(2) .contacts__field {
-  padding-right: 24px;
+  padding-right: 35px;
 }
 
 .contacts__value {
@@ -68,7 +68,7 @@
   width: auto;
   height: 457px;
   background-color: #f4ead8;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .contacts__box-map--center {
@@ -126,12 +126,16 @@
     }
   }
 
+  .contacts__value {
+    padding-right: 20px;
+  }
+
   .contacts__row:nth-child(2) .contacts__field {
     padding-right: 0;
   }
 
   .contacts__box-map {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .contacts__write-to-us {
@@ -182,6 +186,19 @@
   .contacts__block tbody {
     display: block;
     max-width: 305px;
+  }
+
+  .contacts__row {
+    display: block;
+    margin-bottom: 0;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      width: 100%;
+    }
   }
 
   .contacts__field--email {
