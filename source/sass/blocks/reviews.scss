@@ -109,7 +109,7 @@
       position: absolute;
       top: 0;
       z-index: -10;
-      width: 355px;
+      width: 350px;
       height: 100%;
       background-color: #ededed;
       background-image: url("../img/review@1x.jpg");
@@ -184,9 +184,8 @@
 
     &::after {
       position: absolute;
-      left: 50%;
+      left: calc((100% - 1050px) / 2);
       bottom: -91px;
-      transform: translateX(-50%);
       width: 1050px;
       height: 23px;
       background-size: 1064px auto;
@@ -195,8 +194,7 @@
     }
 
     &::before {
-      left: 4.35%;
-      width: 30.43%;
+      left: calc((100% - 1050px) / 2);
     }
   }
 

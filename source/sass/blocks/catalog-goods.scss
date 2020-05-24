@@ -2,6 +2,10 @@
   padding-top: 31px;
 }
 
+.catalog-goods__list {
+  overflow: hidden;
+}
+
 @media (min-width: $desktop-width) {
   .catalog-goods {
     padding-top: 7px;

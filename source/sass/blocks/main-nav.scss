@@ -64,6 +64,8 @@
 
   .main-nav__item {
     border-top: 1px solid #ececec;
+    padding-left: calc((100% - 260px) / 2);
+    padding-right: calc((100% - 260px) / 2);
   }
 }
 

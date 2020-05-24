@@ -6,19 +6,23 @@
 
 .page-main__title {
   margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__block {
+    position: relative;
     flex-direction: column;
-    height: 177px;
     margin-bottom: 37px;
+    min-height: 177px;
 
     &::after {
       content: "";
-      display: block;
+      position: absolute;
       height: 24px;
       width: 100%;
+      bottom: 0;
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-position: bottom;
       background-repeat: repeat-x;
@@ -28,17 +32,21 @@
 
   .page-main__title {
     margin-top: 36px;
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__block {
-    min-height: 212px;
     margin-bottom: 104px;
-    height: 127px;
+    min-height: 127px;
 
     &::after {
       height: 34px;
     }
+  }
+
+  .page-main__title {
+    padding-bottom: 60px;
   }
 }

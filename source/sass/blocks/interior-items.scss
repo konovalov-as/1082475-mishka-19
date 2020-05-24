@@ -13,7 +13,7 @@
   text-decoration: none;
   padding-top: 27px;
   padding-bottom: 30px;
-  padding-left: 28px;
+  padding-left: calc((100% - 260px) / 2);
 
   &::after {
     content: "";
@@ -35,14 +35,15 @@
 
 .interior-items__link--interior {
   background-color: $color-green-1;
-  padding-right: 90px;
+  padding-right: calc((100% - 140px) / 2);
+
   position: relative;
 
   &::after {
     width: 40px;
     height: 62px;
     top: 23px;
-    right: 36px;
+    right: calc((100% - 260px) / 2);
     background-image: url("../img/icon-interior.svg");
   }
 
@@ -61,13 +62,13 @@
 
 .interior-items__link--toy {
   background-color: $color-green-2;
-  padding-right: 100px;
+  padding-right: calc((100% - 120px) / 2);
 
   &::after {
     width: 60px;
     height: 60px;
     top: 21px;
-    right: 27px;
+    right: calc((100% - 260px) / 2);
     background-image: url("../img/icon-toy.svg");
   }
 

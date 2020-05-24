@@ -59,3 +59,19 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    max-width: 450px;
+  }
+
+  .social__item {
+    &:nth-child(3n) {
+      margin-right: 40px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -18,12 +18,15 @@
   .list-goods {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 
   .list-goods__item {
     margin-right: 51px;
     margin-bottom: 57px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
     &:last-child {
       margin-right: 0;
