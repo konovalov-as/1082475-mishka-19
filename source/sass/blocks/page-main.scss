@@ -31,7 +31,7 @@
   }
 
   .page-main__title {
-    margin-top: 36px;
+    margin-top: 26px;
     padding-bottom: 40px;
   }
 }
@@ -39,7 +39,7 @@
 @media (min-width: $desktop-width) {
   .page-main__block {
     margin-bottom: 104px;
-    min-height: 127px;
+    min-height: 213px;
 
     &::after {
       height: 34px;

@@ -92,6 +92,9 @@
 @media (min-width: $tablet-width) {
   .interior-items {
     display: flex;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -179px;
   }
 
@@ -118,5 +121,11 @@
 
   .interior-items__link--toy {
     padding-right: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interior-items {
+    max-width: 1050px;
   }
 }
