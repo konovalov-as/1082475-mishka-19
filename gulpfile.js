@@ -20,6 +20,8 @@ var gulpHtmlBemValidator = require('gulp-html-bem-validator');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
 const htmlmin = require('gulp-htmlmin');
+const ghPages = require('gh-pages');
+const path = require('path');
 
 gulp.task("clean", function () {
   return del("build");
@@ -117,6 +119,11 @@ gulp.task("html-bem-validator", async function () {
     .pipe(gulpHtmlBemValidator())
     .pipe(gulp.dest("build"));
 });
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), "./build"), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("build", gulp.series(
   "clean",
